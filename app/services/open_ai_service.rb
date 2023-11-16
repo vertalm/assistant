@@ -1,0 +1,152 @@
+class OpenAiService
+  # Metody dlya sozdaniya assistant, thread, messages, i run
+
+  api_key = ENV['CHAT_GPT_TOKEN']
+  @open_ai_run_id = nil
+  @open_ai_assistant_id = nil
+  @open_ai_thread_id = nil
+
+  @headers = {
+    'Content-Type' => 'application/json',
+    'Authorization' => "Bearer #{api_key}",
+    'OpenAI-Beta' => 'assistants=v1' # Добавлен дополнительный заголовок
+  }
+
+  def self.create_assistant(instructions)
+    model = 'gpt-4-1106-preview'
+    name = 'OpenAiPostAssistant chat'
+    description = 'OpenAiAssistant for fill chats'
+
+    endpoint = "https://api.openai.com/v1/assistants"
+
+    body = {
+      "model": model, # Основная модель
+      "name": name,
+      "description": description,
+      "instructions": instructions
+    }.to_json
+
+    response = HTTParty.post(endpoint, body: body, headers: @headers)
+
+    if response.success?
+      response_body = JSON.parse(response.body)
+      @open_ai_assistant_id = response_body['id']
+      response_body['id']
+    end
+  end
+
+  def self.modify_assistant(model, assistant_id, instructions)
+    endpoint = "https://api.openai.com/v1/assistants/#{assistant_id}"
+
+    body = {
+      "instructions": instructions
+    }.to_json
+
+    response = HTTParty.post(endpoint, body: body, headers: @headers)
+
+    if response.success?
+      response_body = JSON.parse(response.body)
+      @open_ai_assistant_id = response_body['id']
+      response_body['id']
+    end
+  end
+
+  def self.upload_file(file_destination)
+    endpoint = "https://api.openai.com/v1/files"
+
+    response = HTTParty.post(
+      endpoint,
+      body: {
+        purpose: 'assistants',
+        file: File.new(file_destination)
+      },
+      headers: { "Authorization" => "Bearer #{ENV['CHAT_GPT_TOKEN']}" },
+      multipart: true
+    )
+
+    if response.success?
+      response_body = JSON.parse(response.body)
+      response_body['id']
+    end
+  end
+
+
+  def self.create_thread
+    endpoint = "https://api.openai.com/v1/threads"
+
+    body = ''
+    response = HTTParty.post(endpoint, body: body, headers: @headers)
+
+    if response.success?
+      response_body = JSON.parse(response.body)
+      @open_ai_thread_id = response_body['id']
+      response_body['id']
+    end
+  end
+
+  def self.create_message(thread_id,content, role, file_ids)
+
+    if thread_id.nil?
+      return false
+    end
+
+    endpoint = "https://api.openai.com/v1/threads/#{thread_id}/messages"
+
+    body = {
+      'role' => role || 'user',
+      'content' => content,
+      'file_ids' => file_ids || []
+    }.to_json
+
+    response = HTTParty.post(endpoint, body: body, headers: @headers)
+    response
+  end
+
+  def self.create_run(assistant_id, thread_id)
+    endpoint = "https://api.openai.com/v1/threads/#{thread_id}/runs"
+
+    body = {
+      'assistant_id' => assistant_id
+    }.to_json
+
+    response = HTTParty.post(endpoint, body: body, headers: @headers)
+
+    if response.success?
+      response_body = JSON.parse(response.body)
+      @open_ai_run_id = response_body['id']
+      puts "RUN Instructions: #{response_body['instructions']}"
+      puts "RUN Full: #{response_body.inspect}"
+      @open_ai_run_id
+    end
+  end
+
+  def self.run_check(thread_id, run_id)
+    endpoint = "https://api.openai.com/v1/threads/#{thread_id}/runs/#{run_id}"
+
+    response = HTTParty.get(endpoint, headers: @headers)
+    response_body = JSON.parse(response.body)
+    response_body
+  end
+
+  def self.get_last_message(thread_id)
+    endpoint = "https://api.openai.com/v1/threads/#{thread_id}/messages"
+
+    response = HTTParty.get(endpoint, headers: @headers)
+    response_body = JSON.parse(response.body)
+
+
+    # Проверка успешности запроса
+    if response.success?
+      # Извлечение и отправка последнего сообщения от системы (ассистента) пользователю
+
+      last_system_message = response_body['data'].select { |message| message['role'] == 'assistant' }.first
+      if last_system_message
+        last_system_message['content'].first['text']['value']
+      else
+        "Извините, я не могу найти ответ от ассистента 1"
+      end
+    else
+      "Извините, я не могу найти ответ от ассистента 2"
+    end
+  end
+end

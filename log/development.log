@@ -1,0 +1,1675 @@
+[{"id"=>"msg_IIwkyvUAtPkHqUbNYnx6JApS", "object"=>"thread.message", "created_at"=>1700068987, "thread_id"=>"thread_AZptNJanHn2FZAaSTGOIIKjX", "role"=>"assistant", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет! Как я могу помочь тебе сегодня? Если у тебя есть вопросы или ты нуждаешься в помощи с кодом на Ruby on Rails с использованием Mongoid, просто напиши, и я постараюсь помочь.", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>"asst_G1qgdLnEOJh2m25Y9G56B3fJ", "run_id"=>"run_fQoCDZ3xAHlVWEuE5dCTEu9d", "metadata"=>{}}, {"id"=>"msg_Kv2B0xEWOH7h2rLiiH4LsqF2", "object"=>"thread.message", "created_at"=>1700068985, "thread_id"=>"thread_AZptNJanHn2FZAaSTGOIIKjX", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}]
+{"object"=>"list", "data"=>[{"id"=>"msg_Uzps3VYHqOIz8eL0LhaBKioK", "object"=>"thread.message", "created_at"=>1700069034, "thread_id"=>"thread_DlhoYSGjC0d6Jo5jzHIlEiNl", "role"=>"assistant", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет! Как я могу помочь тебе сегодня с Ruby on Rails и MongoId?", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>"asst_qnLrUCrr4eCMzxyuenX8MVIu", "run_id"=>"run_Zu70R0sXEB8IitLcQJs70Hmn", "metadata"=>{}}, {"id"=>"msg_pw2sc9vB0lZbn0F6uXfba29P", "object"=>"thread.message", "created_at"=>1700069031, "thread_id"=>"thread_DlhoYSGjC0d6Jo5jzHIlEiNl", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}], "first_id"=>"msg_Uzps3VYHqOIz8eL0LhaBKioK", "last_id"=>"msg_pw2sc9vB0lZbn0F6uXfba29P", "has_more"=>false}
+Status: completed
+{"object"=>"list", "data"=>[{"id"=>"msg_7EemAftNqxdFOuse4xbhcYOZ", "object"=>"thread.message", "created_at"=>1700069120, "thread_id"=>"thread_FyOEFq39dEVfAu3QhuAVSBhC", "role"=>"assistant", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет! Как я могу помочь тебе сегодня?", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>"asst_SYkfnHG6masnnnyKsrDTOuAf", "run_id"=>"run_ar9YL50dgcrrprHcr0Ti8ydo", "metadata"=>{}}, {"id"=>"msg_6jcghog0aDqcOprvPOnTK25o", "object"=>"thread.message", "created_at"=>1700069119, "thread_id"=>"thread_FyOEFq39dEVfAu3QhuAVSBhC", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}], "first_id"=>"msg_7EemAftNqxdFOuse4xbhcYOZ", "last_id"=>"msg_6jcghog0aDqcOprvPOnTK25o", "has_more"=>false}
+Status: in_progress
+Status: completed
+{"object"=>"list", "data"=>[{"id"=>"msg_xqwOrZ2gRJAAxNFYIb70DRO3", "object"=>"thread.message", "created_at"=>1700069125, "thread_id"=>"thread_yB7uwUpKEvACApm1nGHoj2zy", "role"=>"assistant", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет! Как я могу помочь тебе сегодня с Ruby on Rails и MongoDB?", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>"asst_mGFmSvKfpsEPWyIfxAgkqzY6", "run_id"=>"run_jbpG2LuUeTtdSOQKtuW9EhYa", "metadata"=>{}}, {"id"=>"msg_3DDS7VLJb71qrWvlHD2GXRTL", "object"=>"thread.message", "created_at"=>1700069124, "thread_id"=>"thread_yB7uwUpKEvACApm1nGHoj2zy", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}], "first_id"=>"msg_xqwOrZ2gRJAAxNFYIb70DRO3", "last_id"=>"msg_3DDS7VLJb71qrWvlHD2GXRTL", "has_more"=>false}
+Status: in_progress
+Status: completed
+{"object"=>"list", "data"=>[{"id"=>"msg_Mtkl76lPmNpyJfbNv47KyaCf", "object"=>"thread.message", "created_at"=>1700069131, "thread_id"=>"thread_rBVd6yXY1BCstxt4VxqvknVi", "role"=>"assistant", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет! Как я могу помочь тебе сегодня с твоим проектом на Ruby on Rails и MongoDB с использованием Mongoid?", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>"asst_VqpmDYYJnX8wdIoeL3QvwCHo", "run_id"=>"run_llVGi71Zn7rwoJCxlyPtE6He", "metadata"=>{}}, {"id"=>"msg_BrOXQUOdrdcv4aoRc0sZMPMB", "object"=>"thread.message", "created_at"=>1700069130, "thread_id"=>"thread_rBVd6yXY1BCstxt4VxqvknVi", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}], "first_id"=>"msg_Mtkl76lPmNpyJfbNv47KyaCf", "last_id"=>"msg_BrOXQUOdrdcv4aoRc0sZMPMB", "has_more"=>false}
+Status: in_progress
+Status: completed
+{"object"=>"list", "data"=>[{"id"=>"msg_dsKkoqS7RMuOpoIQSAVOQGPA", "object"=>"thread.message", "created_at"=>1700069137, "thread_id"=>"thread_uszKLwaQoRYRgN9X3aZduhwW", "role"=>"assistant", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет! Как я могу помочь тебе с твоим проектом на Ruby on Rails с использованием MongoID?", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>"asst_pvNYT0xlMdL3i2C9ay6OhiG6", "run_id"=>"run_8wqPoqjkpd2AOXSj4DkYNoAx", "metadata"=>{}}, {"id"=>"msg_XXuCIhx51yGgilloCNOWOrBB", "object"=>"thread.message", "created_at"=>1700069135, "thread_id"=>"thread_uszKLwaQoRYRgN9X3aZduhwW", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}], "first_id"=>"msg_dsKkoqS7RMuOpoIQSAVOQGPA", "last_id"=>"msg_XXuCIhx51yGgilloCNOWOrBB", "has_more"=>false}
+Status: in_progress
+Status: completed
+{"object"=>"list", "data"=>[{"id"=>"msg_wd3NGtJxf2Y8iZVk6fMXxFBV", "object"=>"thread.message", "created_at"=>1700069150, "thread_id"=>"thread_WdQyaxEZdDfOD0KBXXw5YUhc", "role"=>"assistant", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет! Как я могу помочь вам сегодня с Ruby on Rails и MongoDB?", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>"asst_ANYRlvLYQkzNA8HybsakEQT5", "run_id"=>"run_biqShX4tZc2hHntJXjvlJa8h", "metadata"=>{}}, {"id"=>"msg_UgS66PrWLdtUdvoKpIDEVlbN", "object"=>"thread.message", "created_at"=>1700069149, "thread_id"=>"thread_WdQyaxEZdDfOD0KBXXw5YUhc", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}], "first_id"=>"msg_wd3NGtJxf2Y8iZVk6fMXxFBV", "last_id"=>"msg_UgS66PrWLdtUdvoKpIDEVlbN", "has_more"=>false}
+Response: #<HTTParty::Response:0x73c8 parsed_response={"id"=>"msg_UpQqs6RdMzocxGZK8GHswR8v", "object"=>"thread.message", "created_at"=>1700069210, "thread_id"=>"thread_CPb40aGwjx5vRC4zR5GTur4b", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}, @response=#<Net::HTTPOK 200 OK readbody=true>, @headers={"date"=>["Wed, 15 Nov 2023 17:26:50 GMT"], "content-type"=>["application/json"], "transfer-encoding"=>["chunked"], "connection"=>["close"], "openai-version"=>["2020-10-01"], "openai-organization"=>["user-lrzcbf7f2gwgtxt3ucrblayw"], "x-request-id"=>["7147d954c292c7072831b22101c19d0c"], "openai-processing-ms"=>["88"], "strict-transport-security"=>["max-age=15724800; includeSubDomains"], "cf-cache-status"=>["DYNAMIC"], "set-cookie"=>["__cf_bm=JpgM7rwf5DMWagcgOd9DKohQQFsXasq3sRjbjX1rWTs-1700069210-0-AXDkd80I2BNk8uxPPvLRBaVFxDsWm8YuZVwOKE2lzzkOuZINgv+geU3Nvg+4ZwDILPHjV/aT9HjcFy3kMmEJwQg=; path=/; expires=Wed, 15-Nov-23 17:56:50 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None", "_cfuvid=Lvt3jPOUi47LgxD8k7wdrwFpoRPr2JMb1SCERikla.Y-1700069210656-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"], "server"=>["cloudflare"], "cf-ray"=>["826933946fda1d37-BKK"], "alt-svc"=>["h3=\":443\"; ma=86400"]}>
+Status: completed
+{"object"=>"list", "data"=>[{"id"=>"msg_Z2LSQP5MnlNHm8T51YExeZiJ", "object"=>"thread.message", "created_at"=>1700069211, "thread_id"=>"thread_CPb40aGwjx5vRC4zR5GTur4b", "role"=>"assistant", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет! Как я могу помочь тебе сегодня с Ruby on Rails и Mongoid?", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>"asst_7Kam7tk7nHyLoGpWhy1bjkie", "run_id"=>"run_dnwwN7t2KulcBkTuAzDYh7HU", "metadata"=>{}}, {"id"=>"msg_UpQqs6RdMzocxGZK8GHswR8v", "object"=>"thread.message", "created_at"=>1700069210, "thread_id"=>"thread_CPb40aGwjx5vRC4zR5GTur4b", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}], "first_id"=>"msg_Z2LSQP5MnlNHm8T51YExeZiJ", "last_id"=>"msg_UpQqs6RdMzocxGZK8GHswR8v", "has_more"=>false}
+User id: 74159100
+Response: #<HTTParty::Response:0x73f0 parsed_response={"id"=>"msg_WGN4x482qfINw0nk8UMcI9eb", "object"=>"thread.message", "created_at"=>1700069257, "thread_id"=>"thread_LftlRtKMOwvCiEUTYPmx5dLJ", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}, @response=#<Net::HTTPOK 200 OK readbody=true>, @headers={"date"=>["Wed, 15 Nov 2023 17:27:37 GMT"], "content-type"=>["application/json"], "transfer-encoding"=>["chunked"], "connection"=>["close"], "openai-version"=>["2020-10-01"], "openai-organization"=>["user-lrzcbf7f2gwgtxt3ucrblayw"], "x-request-id"=>["2ab297be37c37d1975aaa50fdf027528"], "openai-processing-ms"=>["95"], "strict-transport-security"=>["max-age=15724800; includeSubDomains"], "cf-cache-status"=>["DYNAMIC"], "set-cookie"=>["__cf_bm=D_JLH5xX_xe1SmOP7Z5TW1Q5uKt.r.2z37loTDCM5GM-1700069257-0-ASbOkAubhZ+JTnvZpW8sEO8BLfhPfjw/kMS3VKaDDBrTqhM4NPne+nsEH0xCmhArRMloAuabcDKu0lEGL4Q++1s=; path=/; expires=Wed, 15-Nov-23 17:57:37 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None", "_cfuvid=X2djhwCV1aC4yP4qhEoUzrMqC.Ykm0QNYpFydHp8ciY-1700069257153-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"], "server"=>["cloudflare"], "cf-ray"=>["826934b6f81dca2a-BKK"], "alt-svc"=>["h3=\":443\"; ma=86400"]}>
+Status: completed
+{"object"=>"list", "data"=>[{"id"=>"msg_J9aJPDrFWWlKv5pXaZEAZ5CE", "object"=>"thread.message", "created_at"=>1700069258, "thread_id"=>"thread_LftlRtKMOwvCiEUTYPmx5dLJ", "role"=>"assistant", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет! Как я могу помочь тебе сегодня?", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>"asst_GvolrIM9P08cMZLM7iDsKlJx", "run_id"=>"run_HNPq8vNFJswKpmHjabCJX8eD", "metadata"=>{}}, {"id"=>"msg_WGN4x482qfINw0nk8UMcI9eb", "object"=>"thread.message", "created_at"=>1700069257, "thread_id"=>"thread_LftlRtKMOwvCiEUTYPmx5dLJ", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}], "first_id"=>"msg_J9aJPDrFWWlKv5pXaZEAZ5CE", "last_id"=>"msg_WGN4x482qfINw0nk8UMcI9eb", "has_more"=>false}
+User id: 74159100
+Response: #<HTTParty::Response:0x73f0 parsed_response={"id"=>"msg_edJ99kglNItYyt3533CIjh6p", "object"=>"thread.message", "created_at"=>1700069348, "thread_id"=>"thread_2MTAuDokjj5oYd4zlGZTJeYn", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}, @response=#<Net::HTTPOK 200 OK readbody=true>, @headers={"date"=>["Wed, 15 Nov 2023 17:29:08 GMT"], "content-type"=>["application/json"], "transfer-encoding"=>["chunked"], "connection"=>["close"], "openai-version"=>["2020-10-01"], "openai-organization"=>["user-lrzcbf7f2gwgtxt3ucrblayw"], "x-request-id"=>["4a56bcaa20f085136401272ea71bbf2a"], "openai-processing-ms"=>["93"], "strict-transport-security"=>["max-age=15724800; includeSubDomains"], "cf-cache-status"=>["DYNAMIC"], "set-cookie"=>["__cf_bm=vUnJ5MhUbuKdCpt4HbdLccuL11rJdq5WZb9C2gKH368-1700069348-0-AUpz7NVN/mpA5oCLFk7s9/2oGks3OCVkIXKYZq4snVknMhCAFSWRc+jMhQ9rblfBvdEG2WbVSN/d27CRjf/wJ0g=; path=/; expires=Wed, 15-Nov-23 17:59:08 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None", "_cfuvid=nv7p4F04yxQIXd0.120_q.73MSr1P2tuBRfBmKqTUF8-1700069348259-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"], "server"=>["cloudflare"], "cf-ray"=>["826936f05cdb2dd0-BKK"], "alt-svc"=>["h3=\":443\"; ma=86400"]}>
+Status: in_progress
+Status: completed
+{"object"=>"list", "data"=>[{"id"=>"msg_SLXFbZ024pUYZda5x2YHBumQ", "object"=>"thread.message", "created_at"=>1700069349, "thread_id"=>"thread_2MTAuDokjj5oYd4zlGZTJeYn", "role"=>"assistant", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет! Как я могу помочь тебе сегодня с Ruby on Rails и Mongoid?", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>"asst_14fqXdytqvEQmfIzStfyXI38", "run_id"=>"run_UcLeVfcLtqVXJl8Kxi4uZwdW", "metadata"=>{}}, {"id"=>"msg_edJ99kglNItYyt3533CIjh6p", "object"=>"thread.message", "created_at"=>1700069348, "thread_id"=>"thread_2MTAuDokjj5oYd4zlGZTJeYn", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}], "first_id"=>"msg_SLXFbZ024pUYZda5x2YHBumQ", "last_id"=>"msg_edJ99kglNItYyt3533CIjh6p", "has_more"=>false}
+User id: 74159100
+Response: #<HTTParty::Response:0x73f0 parsed_response={"id"=>"msg_JyKB6CJxtmvLQ8xRS2Rwylfs", "object"=>"thread.message", "created_at"=>1700069421, "thread_id"=>"thread_zdcok4pV25PyOB5gf1Q260XT", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}, @response=#<Net::HTTPOK 200 OK readbody=true>, @headers={"date"=>["Wed, 15 Nov 2023 17:30:21 GMT"], "content-type"=>["application/json"], "transfer-encoding"=>["chunked"], "connection"=>["close"], "openai-version"=>["2020-10-01"], "openai-organization"=>["user-lrzcbf7f2gwgtxt3ucrblayw"], "x-request-id"=>["3a89203a9eea05e324e6c0a447c84118"], "openai-processing-ms"=>["94"], "strict-transport-security"=>["max-age=15724800; includeSubDomains"], "cf-cache-status"=>["DYNAMIC"], "set-cookie"=>["__cf_bm=meSpNP68B6SF0DpoII_ncU4PXY6ZAa.PjNBCyE4XCj0-1700069421-0-AVsgh16AcWUxoorwqA114oFG30D1Y6A8/5e3nzLDBSmYP2pwqTIgcVswz36rPKfResWUlAkjVXhITG7HXcSJAcU=; path=/; expires=Wed, 15-Nov-23 18:00:21 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None", "_cfuvid=IOY23Fa333Ad9JtmoYWhW2Dg_0VUX1KxOeYV_RrPets-1700069421143-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"], "server"=>["cloudflare"], "cf-ray"=>["826938b7ef63ca2a-BKK"], "alt-svc"=>["h3=\":443\"; ma=86400"]}>
+Status: in_progress
+Status: completed
+User id: 74159100
+Response: #<HTTParty::Response:0x73f0 parsed_response={"id"=>"msg_zqMo73HUxc9SbFi7CipNzd8Y", "object"=>"thread.message", "created_at"=>1700069573, "thread_id"=>"thread_ODvLfJKNOSbo4MI5qjnSdqwl", "role"=>"user", "content"=>[{"type"=>"text", "text"=>{"value"=>"Привет", "annotations"=>[]}}], "file_ids"=>[], "assistant_id"=>nil, "run_id"=>nil, "metadata"=>{}}, @response=#<Net::HTTPOK 200 OK readbody=true>, @headers={"date"=>["Wed, 15 Nov 2023 17:32:54 GMT"], "content-type"=>["application/json"], "transfer-encoding"=>["chunked"], "connection"=>["close"], "openai-version"=>["2020-10-01"], "openai-organization"=>["user-lrzcbf7f2gwgtxt3ucrblayw"], "x-request-id"=>["b1d3acd8150b820de9ccd1c20291777c"], "openai-processing-ms"=>["93"], "strict-transport-security"=>["max-age=15724800; includeSubDomains"], "cf-cache-status"=>["DYNAMIC"], "set-cookie"=>["__cf_bm=CnMXpiSkBcjsOiOj7XTQZu0mLQDxEHkjXRDAPdzdKok-1700069574-0-AVI2V/htwW/LYoD0YEgJsIhNI2wY5gfSSLCKRqldhYqkWVTmDM3a3tdZ3xljCoOJ33Mu0MSfqeic4a4VGApvRdA=; path=/; expires=Wed, 15-Nov-23 18:02:54 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None", "_cfuvid=lxIBuvbzkb7IjI6mGzAoZy8dqfAdmtlV_BLQCJs3N7c-1700069574053-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"], "server"=>["cloudflare"], "cf-ray"=>["82693c7369832db0-BKK"], "alt-svc"=>["h3=\":443\"; ma=86400"]}>
+Status: in_progress
+Status: completed
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: in_progress
+Status: completed
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: completed
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: completed
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: completed
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: completed
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: completed
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+User id: 74159100
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+User id: 74159100
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+User id: 74159100
+Status: in_progress
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: completed
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: in_progress
+Status: completed
+User id: 74159100
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: completed
+User id: 74159100
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+User id: 74159100
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+Status: 
+User id: 74159100
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+Status: completed
+User id: 74159100
+Status: completed
+User id: 74159100
+Status: completed
+User id: 74159100
+Status: in_progress
+Status: completed
+User id: 74159100
+User id: 74159100
+User id: 74159100
+User id: 74159100
+User id: 74159100
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 req:6 conn:1:1 sconn:6 | assistant_dev.saslStart | STARTED | {}
+MONGODB | localhost:27017 req:6 | assistant_dev.saslStart | FAILED | [18:AuthenticationFailed]: Authentication failed. | 0.0012328479206189513s
+MONGODB | Failed to authenticate to localhost:27017: Mongo::Auth::Unauthorized: User assistant_dev (mechanism: scram) is not authorized to access assistant_dev (auth source: assistant_dev, used mechanism: SCRAM-SHA-1, used server: localhost:27017 (STANDALONE)): [18:AuthenticationFailed]: Authentication failed.
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'unknown'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:9 | assistant_dev.saslStart | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslStart | FAILED | [18:AuthenticationFailed]: Authentication failed. | 0.0024757799692451954s
+MONGODB | Failed to authenticate to 127.0.0.1:27017: Mongo::Auth::Unauthorized: User assistant_dev (mechanism: scram) is not authorized to access assistant_dev (auth source: assistant_dev, used mechanism: SCRAM-SHA-1, used server: 127.0.0.1:27017 (STANDALONE)): [18:AuthenticationFailed]: Authentication failed.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'unknown'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:25 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:25 | assistant_dev.find | STARTED | {"find"=>"users", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16120 type=uuid data=0x817a8f7684df49bb...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:28 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.008s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:28 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16120 type=uuid data=0xde6332c23d1141e4...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:32 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:32 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16140 type=uuid data=0xcc9c7773066c4d3a...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:34 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:34 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16140 type=uuid data=0xff4c1f7ba2c94bc4...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:37 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:37 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16140 type=uuid data=0x7fe1b2fc8b8e4bd4...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:40 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:40 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16140 type=uuid data=0xe69cf9dfa7694436...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.003s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:43 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:43 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16140 type=uuid data=0xaa52b98fbbe6427d...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:46 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:46 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16140 type=uuid data=0x8755ecb8bafa4742...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:49 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:49 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x2f8f9c9f73e6485f...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:49 | assistant_dev.insert | STARTED | {"insert"=>"user_telegrams", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893'), "telegram_id"=>74159100}], "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x2f8f9c9f73e6485f...>}}
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.insert | SUCCEEDED | 0.029s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:53 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:53 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x8d2015523c8f4aad...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.003s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:53 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.012s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:53 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x8d2015523c8f4aad...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:55 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:55 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x3a6e151f3514409e...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:55 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.003s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:55 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x3a6e151f3514409e...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:55 | assistant_dev.insert | STARTED | {"insert"=>"open_ai_assistants", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367'), "assistant_name"=>"Алеша", "user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}], "$db"=>"assistant_dev", "lsid"=>{"id"=><BS...
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.insert | SUCCEEDED | 0.016s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:13 conn:1:1 sconn:55 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x3a6e151f3514409e...>}}
+MONGODB | 127.0.0.1:27017 req:13 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:14 conn:1:1 sconn:55 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "limit"=>1, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x3a6e151f3514409e...>}}
+MONGODB | 127.0.0.1:27017 req:14 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:15 conn:1:1 sconn:55 | assistant_dev.update | STARTED | {"update"=>"open_ai_assistants", "ordered"=>true, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "u"=>{"$set"=>{"instructions"=>"Ты Senior RoR разработчик, который использует MongoID"}}}], "$db"=>"assistant_dev", "lsid"=>{"id"=...
+MONGODB | 127.0.0.1:27017 req:15 | assistant_dev.update | SUCCEEDED | 0.003s
+MONGODB | 127.0.0.1:27017 req:16 conn:1:1 sconn:55 | assistant_dev.update | STARTED | {"update"=>"open_ai_assistants", "ordered"=>true, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "u"=>{"$set"=>{"assistant_id"=>"asst_03T1wxkudkSBfgR92Qn3beFL", "thread_id"=>"thread_pBR2w83hJ8IzkmlCFjSP9RvR"}}}], "$db"=>"assist...
+MONGODB | 127.0.0.1:27017 req:16 | assistant_dev.update | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:20 conn:1:1 sconn:55 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x3a6e151f3514409e...>}}
+MONGODB | 127.0.0.1:27017 req:20 | assistant_dev.find | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27017 req:21 conn:1:1 sconn:55 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:21 | assistant_dev.aggregate | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27017 req:22 conn:1:1 sconn:55 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x3a6e151f3514409e...>}}
+MONGODB | 127.0.0.1:27017 req:22 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:58 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:58 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x5c7ea7c5ea9c4519...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:58 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:58 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x5c7ea7c5ea9c4519...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:61 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.011s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:61 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x2193949bf9c8492e...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:61 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.003s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:61 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x2193949bf9c8492e...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:61 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x2193949bf9c8492e...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.003s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:64 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:64 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x6dcd46f3ba444e93...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.003s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:64 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:64 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x6dcd46f3ba444e93...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:64 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x6dcd46f3ba444e93...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:67 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:67 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x5a01f85190db45be...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:67 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:67 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x5a01f85190db45be...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:67 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x5a01f85190db45be...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:71 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:71 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.005s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:11 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:11 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:12 conn:1:1 sconn:71 | assistant_dev.insert | STARTED | {"insert"=>"open_ai_assistants", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6555a03158c4dc6322080f25'), "assistant_name"=>"Марина", "user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}], "$db"=>"assistant_dev", "lsid"=>{"id"=><B...
+MONGODB | 127.0.0.1:27017 req:12 | assistant_dev.insert | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27017 req:15 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('6555a03158c4dc6322080f25')}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:15 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:16 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "limit"=>1, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:16 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:17 conn:1:1 sconn:71 | assistant_dev.update | STARTED | {"update"=>"open_ai_assistants", "ordered"=>true, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('6555a03158c4dc6322080f25')}, "u"=>{"$set"=>{"instructions"=>"Ты специалист по базам данных Postgree и тебя зовут Марина"}}}], "$db"=>"assistant_dev", "lsid"=>{...
+MONGODB | 127.0.0.1:27017 req:17 | assistant_dev.update | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27017 req:18 conn:1:1 sconn:71 | assistant_dev.update | STARTED | {"update"=>"open_ai_assistants", "ordered"=>true, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('6555a03158c4dc6322080f25')}, "u"=>{"$set"=>{"assistant_id"=>"asst_SjpfFbVdacD1LJTM5z6Dgl6s", "thread_id"=>"thread_3HaBR310pMQ4cpO5MrQeSRM6"}}}], "$db"=>"assist...
+MONGODB | 127.0.0.1:27017 req:18 | assistant_dev.update | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:21 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:21 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:22 conn:1:1 sconn:71 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:22 | assistant_dev.aggregate | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27017 req:23 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:23 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:24 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:24 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:29 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:29 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:30 conn:1:1 sconn:71 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:30 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:31 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:31 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:32 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('6555a03158c4dc6322080f25')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:32 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:35 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:35 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:36 conn:1:1 sconn:71 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:36 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:37 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:37 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:39 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:39 | assistant_dev.find | SUCCEEDED | 0.008s
+MONGODB | 127.0.0.1:27017 req:41 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:41 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:42 conn:1:1 sconn:71 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:42 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:43 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:43 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:44 conn:1:1 sconn:71 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('6555a03158c4dc6322080f25')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xa4614fd5dd864042...>}}
+MONGODB | 127.0.0.1:27017 req:44 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:73 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:73 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x7edcc26158a3418a...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:73 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:73 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x7edcc26158a3418a...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:76 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:76 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16140 type=uuid data=0x30566ad4a94c4e03...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:79 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:79 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xcfc6e9b6e8ff48a3...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:79 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:79 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xcfc6e9b6e8ff48a3...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:79 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xcfc6e9b6e8ff48a3...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:82 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:82 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x61d6dd4f30024107...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:82 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:82 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x61d6dd4f30024107...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:82 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x61d6dd4f30024107...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:85 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:85 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xac1cc97f7fae448c...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:85 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:85 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xac1cc97f7fae448c...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:85 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xac1cc97f7fae448c...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.004s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:14 conn:1:1 sconn:85 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('6555a03158c4dc6322080f25')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xac1cc97f7fae448c...>}}
+MONGODB | 127.0.0.1:27017 req:14 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:88 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:88 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x12062e3b17334ef6...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:88 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:88 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x12062e3b17334ef6...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:88 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x12062e3b17334ef6...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:92 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:92 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x39ca56d29fa04591...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:92 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:92 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x39ca56d29fa04591...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:92 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('6555a03158c4dc6322080f25')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x39ca56d29fa04591...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone' [awaited].
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:26 conn:1:1 sconn:92 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x39ca56d29fa04591...>}}
+MONGODB | 127.0.0.1:27017 req:26 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Error running awaited hello on 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Failed to read an awaited hello response in 40 seconds (on 127.0.0.1)
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:94 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:94 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x8dd6cf5ca18b47bd...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:94 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:94 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x8dd6cf5ca18b47bd...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:94 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x8dd6cf5ca18b47bd...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:97 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:97 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=uuid data=0x64153ba8833f47dd...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:97 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:97 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=uuid data=0x64153ba8833f47dd...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:97 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=uuid data=0x64153ba8833f47dd...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:100 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:100 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=uuid data=0x873d2458e55a42c7...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:100 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:100 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=uuid data=0x873d2458e55a42c7...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:100 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=uuid data=0x873d2458e55a42c7...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:103 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:103 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16140 type=uuid data=0xade1658ad98a4383...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:106 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:106 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=uuid data=0x70c58408f11e4dc1...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:106 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:106 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=uuid data=0x70c58408f11e4dc1...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:106 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16240 type=uuid data=0x70c58408f11e4dc1...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:109 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:109 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xbca4ad8d2d0c4d92...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:109 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:109 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xbca4ad8d2d0c4d92...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:109 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xbca4ad8d2d0c4d92...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:112 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:112 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x0ae7b888d8db401b...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:112 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:112 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x0ae7b888d8db401b...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:112 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x0ae7b888d8db401b...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:115 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:115 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x8f42e0ff93d74a3e...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.016s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:115 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.012s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:115 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x8f42e0ff93d74a3e...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:115 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x8f42e0ff93d74a3e...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:118 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:118 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xfc29b7565f714153...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:118 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:118 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xfc29b7565f714153...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:118 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xfc29b7565f714153...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:121 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:121 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x7145aa8059ce4600...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:121 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:121 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x7145aa8059ce4600...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:121 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x7145aa8059ce4600...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:124 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:124 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x1ad7d2da13124682...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.003s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:124 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:124 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x1ad7d2da13124682...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:124 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x1ad7d2da13124682...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:127 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:127 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x7f67056c59a645d4...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:127 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:127 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x7f67056c59a645d4...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:127 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x7f67056c59a645d4...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:130 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:130 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16180 type=uuid data=0x2d0846c7b7d74622...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.003s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:130 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16180 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.005s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:130 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16180 type=uuid data=0x2d0846c7b7d74622...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:130 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16180 type=uuid data=0x2d0846c7b7d74622...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:133 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.000s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:133 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x35210eb5f71c4d47...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:133 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.004s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:133 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x35210eb5f71c4d47...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:133 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x35210eb5f71c4d47...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:136 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.003s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:136 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16180 type=uuid data=0x3a6337d8fc2042bb...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.044s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:136 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16180 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.027s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:136 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16180 type=uuid data=0x3a6337d8fc2042bb...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:136 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16180 type=uuid data=0x3a6337d8fc2042bb...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.004s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:6 conn:1:1 sconn:139 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:6 | assistant_dev.saslContinue | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:139 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x6de30c98844d413a...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.057s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:139 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.018s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:139 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x6de30c98844d413a...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:12 conn:1:1 sconn:139 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x6de30c98844d413a...>}}
+MONGODB | Error running awaited hello on 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 40 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1)
+MONGODB | Error checking 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 30 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1, sconn:138)
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'unknown'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:12 | assistant_dev.find | FAILED | IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1, connection 1:1) | 20.04301744699478s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Read retry due to: Mongo::Error::PoolClearedError: Connection to 127.0.0.1:27017 interrupted due to server monitor timeout (for pool 0x16240) (modern retry, attempt 1)
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:16 conn:2:2 sconn:142 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:16 | assistant_dev.saslContinue | SUCCEEDED | 0.015s
+MONGODB | 127.0.0.1:27017 req:17 conn:2:2 sconn:142 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0x6de30c98844d413a...>}}
+MONGODB | 127.0.0.1:27017 req:17 | assistant_dev.find | SUCCEEDED | 0.031s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Error running awaited hello on 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Failed to read an awaited hello response in 40 seconds (on 127.0.0.1)
+MONGODB | Error checking 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 30 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1, sconn:141)
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'unknown'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Failed to handshake with 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 30 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1)
+MONGODB | Error checking 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 30 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1)
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Failed to handshake with 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 30 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1)
+MONGODB | Error checking 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 30 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1)
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Error running awaited hello on 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 40 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1)
+MONGODB | Error checking 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 30 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1, sconn:148)
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'unknown'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Failed to handshake with 127.0.0.1:27017: Mongo::Error::SocketError: IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1, connection 1:1)
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | 127.0.0.1:27017 req:5 conn:1:1 sconn:153 | assistant_dev.saslContinue | STARTED | {}
+MONGODB | 127.0.0.1:27017 req:5 | assistant_dev.saslContinue | SUCCEEDED | 0.003s
+MONGODB | 127.0.0.1:27017 req:7 conn:1:1 sconn:153 | assistant_dev.find | STARTED | {"find"=>"user_telegrams", "filter"=>{"telegram_id"=>74159100}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xbcc3f28d93094152...>}}
+MONGODB | 127.0.0.1:27017 req:7 | assistant_dev.find | SUCCEEDED | 0.009s
+MONGODB | 127.0.0.1:27017 req:8 conn:1:1 sconn:153 | assistant_dev.aggregate | STARTED | {"aggregate"=>"open_ai_assistants", "pipeline"=>[{"$match"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=u...
+MONGODB | 127.0.0.1:27017 req:8 | assistant_dev.aggregate | SUCCEEDED | 0.013s
+MONGODB | 127.0.0.1:27017 req:9 conn:1:1 sconn:153 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"user_telegram_id"=>BSON::ObjectId('65559bf958c4dc6165ed7893')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xbcc3f28d93094152...>}}
+MONGODB | 127.0.0.1:27017 req:9 | assistant_dev.find | SUCCEEDED | 0.002s
+MONGODB | 127.0.0.1:27017 req:10 conn:1:1 sconn:153 | assistant_dev.find | STARTED | {"find"=>"open_ai_assistants", "filter"=>{"_id"=>BSON::ObjectId('65559c9658c4dc61ad338367')}, "$db"=>"assistant_dev", "lsid"=>{"id"=><BSON::Binary:0x16160 type=uuid data=0xbcc3f28d93094152...>}}
+MONGODB | 127.0.0.1:27017 req:10 | assistant_dev.find | SUCCEEDED | 0.001s
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Error checking 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 30 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1, sconn:152)
+MONGODB | Server description for 127.0.0.1:27017 changed from 'standalone' to 'unknown'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Error running awaited hello on 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 40 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1)
+MONGODB | Failed to handshake with 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 30 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1)
+MONGODB | Error checking 127.0.0.1:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 30 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1)
+MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Unsupported client option 'w'. It will be ignored.
+MONGODB | Unsupported client option 'consistency'. It will be ignored.
+MONGODB | Unsupported client option 'pool_size'. It will be ignored.
+MONGODB | Unsupported client option 'roles'. It will be ignored.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server 127.0.0.1:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 23.95 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 10.45 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
