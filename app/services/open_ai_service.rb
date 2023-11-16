@@ -12,6 +12,17 @@ class OpenAiService
     'OpenAI-Beta' => 'assistants=v1' # Добавлен дополнительный заголовок
   }
 
+  def self.delete_assistant(assistant_id)
+    endpoint = "https://api.openai.com/v1/assistants/#{assistant_id}"
+
+    response = HTTParty.delete(endpoint, headers: @headers)
+
+    if response.success?
+      response_body = JSON.parse(response.body)
+      response_body['id']
+    end
+  end
+
   def self.create_assistant(instructions)
     model = 'gpt-4-1106-preview'
     name = 'OpenAiPostAssistant chat'
@@ -115,6 +126,7 @@ class OpenAiService
       response_body = JSON.parse(response.body)
       @open_ai_run_id = response_body['id']
       puts "RUN Instructions: #{response_body['instructions']}"
+      puts "RUN File ids: #{response_body['file_ids']}"
       puts "RUN Full: #{response_body.inspect}"
       @open_ai_run_id
     end

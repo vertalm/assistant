@@ -9,7 +9,7 @@ class BotState
   attr_accessor :is_changing_context, :instructions, :fallback_model, :primary_model,
                 :switch_time, :assistant_id, :thread_id, :run_id,
                 :is_creating_assistant_name, :is_creating_assistant_instruction,
-                :mongo_assistant_id
+                :mongo_assistant_id, :is_creating_image, :pending_removal_id
 
   def initialize
     @is_changing_context = false
@@ -23,6 +23,8 @@ class BotState
     @is_creating_assistant_name = false
     @is_creating_assistant_instruction = false
     @mongo_assistant_id = nil
+    @is_creating_image = false
+    @pending_removal_id = nil
   end
 end
 
@@ -50,6 +52,12 @@ class TelegramGptBot
                 chat_id: message.chat.id,
                 text: "Введи имя нового ассистента."
               )
+            when '/remove_assistant'
+              CommandHandlers.handle_remove_assistant_command(state, bot, message)
+            when '/new_image'
+              CommandHandlers.handle_new_image_command(state, bot, message)
+            when '/help'
+              CommandHandlers.handle_help_command(bot, message)
             else
               website_data = handle_website_visit_command(state, bot, message)
               if website_data
@@ -68,17 +76,23 @@ class TelegramGptBot
             file = URI.open(file_url)
             file_data = file.read
             file.close
-            file_extension = File.extname(file_name)
-            generated_file_name = "#{SecureRandom.uuid}#{file_extension}"
-            file_destination = File.join("/tmp/", generated_file_name)
-            File.open(file_destination, "wb") { |f| f.write(file_data) }
-            file_id = OpenAiService.upload_file(file_destination)
-            MessageHandling.handle_message_with_file(state, bot, message, [file_id])
+            MessageHandling.handle_message_with_file(state, bot, message, file_data, file_name)
 
-            puts "INSPECT: #{message.inspect}"
           end
         elsif message.is_a?(Telegram::Bot::Types::CallbackQuery)
-          AssistantManagement.handle_assistant_selection(state, bot, message)
+          if message.data.start_with?('remove_')
+            assistant_id = message.data.sub('remove_', '')
+            # Логика для подтверждения удаления ассистента
+            AssistantManagement.confirm_removal(state, bot, assistant_id, message.from.id)
+          elsif message.data == 'confirm_remove'
+            # Логика для выполнения удаления
+            AssistantManagement.perform_removal(state, bot, state.pending_removal_id, message.from.id)
+          elsif message.data == 'cancel_remove'
+            # Логика для отмены удаления
+            bot.api.send_message(chat_id: message.from.id, text: 'Удаление отменено.')
+          else
+            AssistantManagement.handle_assistant_selection(state, bot, message)
+          end
         end
       end
     end

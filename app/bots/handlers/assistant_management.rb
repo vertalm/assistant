@@ -1,6 +1,29 @@
 # handlers/assistant_management.rb
 
 module AssistantManagement
+
+  def self.confirm_removal(state, bot, assistant_id, user_id)
+    state.pending_removal_id = assistant_id
+    # Создайте inline-клавиатуру для подтверждения
+    inline_keyboard = [
+      [Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Да', callback_data: 'confirm_remove')],
+      [Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Нет', callback_data: 'cancel_remove')]
+    ]
+    markup = Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: inline_keyboard)
+    bot.api.send_message(chat_id: user_id, text: "Вы уверены, что хотите удалить ассистента?", reply_markup: markup)
+  end
+
+  def self.perform_removal(state, bot, assistant_id, user_id)
+    # Находим ассистента в базе данных
+    assistant = ::OpenAiAssistant.find(assistant_id)
+    # Удаляем ассистента из базы данных
+    assistant.destroy
+
+    OpenAiService.delete_assistant(assistant_id)
+
+    bot.api.send_message(chat_id: user_id, text: "Ассистент удален.")
+  end
+
   def self.handle_assistant_selection(state, bot, message)
     # Проверяем, что сообщение является ответом на запрос выбора ассистента
     if message.is_a?(Telegram::Bot::Types::CallbackQuery)

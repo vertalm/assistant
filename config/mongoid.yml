@@ -1,3 +1,23 @@
+production:
+  clients:
+    default:
+      database: <%= "#{ENV['MONGO_DB_PROD']}" %>
+      hosts:
+        - <%= "#{ENV['MONGO_HOST_PROD']}" %>
+      options:
+        read:
+          mode: :primary_preferred
+
+        user: <%= "#{ENV['MONGO_USER_PROD']}" %>
+        password: <%= "#{ENV['MONGO_PASSWORD_PROD']}" %>
+
+        auth_mech: :scram
+        auth_source: <%= "#{ENV['MONGO_DB_PROD']}" %>
+
+        max_pool_size: 100
+        wait_queue_timeout: 30
+        connect_timeout: 30
+
 development:
   # Configure available database clients. (required)
   clients:
