@@ -5,6 +5,8 @@ unzip chrome-linux64.zip -d ~/chrome-119
 sudo ln -sf ~/chrome-119/chrome-linux64/chrome /usr/bin/chromium-browser
 /usr/bin/chromium-browser --version
 
+wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.105/linux64/chromedriver-linux64.zip
+unzip chromedriver-linux64.zip -d ~/chromedriver-linux64
 sudo mv /chromedriver-linux64/chromedriver /usr/bin/chromedriver
 
 This README would normally document whatever steps are necessary to get the
