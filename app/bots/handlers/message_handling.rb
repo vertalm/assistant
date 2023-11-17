@@ -13,12 +13,7 @@ module MessageHandling
     if resp == false
       bot.api.send_message(
         chat_id: message.chat.id,
-        text: "Прости, начни сначала",
-        parse_mode: 'Markdown'
-      )
-      bot.api.send_message(
-        chat_id: message.chat.id,
-        text: resp.inspect,
+        text: "Прости, начни сначала thread_id: #{state.thread_id}",
         parse_mode: 'Markdown'
       )
       return
