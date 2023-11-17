@@ -31,7 +31,9 @@ module CommandHandlers
   end
 
   def self.handle_new_image_command(state, bot, message)
-    state.is_creating_image = true
+    state.update(
+      is_creating_image:true
+    )
 
     bot.api.send_message(
       chat_id: message.chat.id,
@@ -41,7 +43,6 @@ module CommandHandlers
 
   def self.handle_start_command(state, bot, message)
     user_id = message.from.id
-    puts "User id: #{user_id}"
     user = ::UserTelegram.where(telegram_id: user_id).first
     if user.nil?
       user = ::UserTelegram.new(telegram_id: user_id)
@@ -61,7 +62,9 @@ module CommandHandlers
       )
     else
       # Ask user to create assistant name and after assistant instruction
-      state.is_creating_assistant_name = true
+      state.update(
+        is_creating_assistant_name:true
+      )
       bot.api.send_message(
         chat_id: user_id,
         text: 'Введи имя ассистента'

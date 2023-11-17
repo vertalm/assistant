@@ -2,9 +2,6 @@ class OpenAiService
   # Metody dlya sozdaniya assistant, thread, messages, i run
 
   api_key = ENV['CHAT_GPT_TOKEN']
-  @open_ai_run_id = nil
-  @open_ai_assistant_id = nil
-  @open_ai_thread_id = nil
 
   @headers = {
     'Content-Type' => 'application/json',
@@ -23,7 +20,7 @@ class OpenAiService
     end
   end
 
-  def self.create_assistant(instructions)
+  def self.create_assistant(state, instructions)
     model = 'gpt-4-1106-preview'
     name = 'OpenAiPostAssistant chat'
     description = 'OpenAiAssistant for fill chats'
@@ -41,12 +38,14 @@ class OpenAiService
 
     if response.success?
       response_body = JSON.parse(response.body)
-      @open_ai_assistant_id = response_body['id']
+      state.update(
+        assistant_id:response_body['id']
+      )
       response_body['id']
     end
   end
 
-  def self.modify_assistant(model, assistant_id, instructions)
+  def self.modify_assistant(model, assistant_id, instructions, state)
     endpoint = "https://api.openai.com/v1/assistants/#{assistant_id}"
 
     body = {
@@ -57,7 +56,9 @@ class OpenAiService
 
     if response.success?
       response_body = JSON.parse(response.body)
-      @open_ai_assistant_id = response_body['id']
+      state.update(
+        assistant_id:response_body['id']
+      )
       response_body['id']
     end
   end
@@ -82,7 +83,7 @@ class OpenAiService
   end
 
 
-  def self.create_thread
+  def self.create_thread(state)
     endpoint = "https://api.openai.com/v1/threads"
 
     body = ''
@@ -90,7 +91,7 @@ class OpenAiService
 
     if response.success?
       response_body = JSON.parse(response.body)
-      @open_ai_thread_id = response_body['id']
+      state.update(thread_id: response_body['id'])
       response_body['id']
     end
   end
@@ -110,10 +111,12 @@ class OpenAiService
     }.to_json
 
     response = HTTParty.post(endpoint, body: body, headers: @headers)
+    response_body = JSON.parse(response.body)
+    puts "BODY MESSAGES RESPONSE #{response_body.inspect}"
     response
   end
 
-  def self.create_run(assistant_id, thread_id)
+  def self.create_run(state, assistant_id, thread_id)
     endpoint = "https://api.openai.com/v1/threads/#{thread_id}/runs"
 
     body = {
@@ -124,11 +127,8 @@ class OpenAiService
 
     if response.success?
       response_body = JSON.parse(response.body)
-      @open_ai_run_id = response_body['id']
-      puts "RUN Instructions: #{response_body['instructions']}"
-      puts "RUN File ids: #{response_body['file_ids']}"
-      puts "RUN Full: #{response_body.inspect}"
-      @open_ai_run_id
+      state.update(run_id:response_body['id'])
+      response_body['id']
     end
   end
 
@@ -145,7 +145,6 @@ class OpenAiService
 
     response = HTTParty.get(endpoint, headers: @headers)
     response_body = JSON.parse(response.body)
-
 
     # Проверка успешности запроса
     if response.success?

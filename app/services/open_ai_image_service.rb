@@ -13,8 +13,6 @@ module OpenAiImageService
       'Authorization' => "Bearer #{api_key}"
     }
 
-    puts "HEADERS: #{headers}"
-
     body = {
       "prompt": prompt,
       "n": 1,          # Количество изображений
@@ -22,11 +20,7 @@ module OpenAiImageService
       "model": "dall-e-3"  # Используйте модель изображений, поддерживаемую OpenAI
     }.to_json
 
-    puts "BODY: #{body}"
-
     response = HTTParty.post(ENDPOINT, body: body, headers: headers)
-
-    puts "RESPONSE: #{response}"
 
     if response.success?
       response_body = JSON.parse(response.body)

@@ -5,56 +5,62 @@ require_relative 'handlers/command_handlers'
 require_relative 'handlers/assistant_management'
 require_relative 'handlers/message_handling'
 
-class BotState
-  attr_accessor :is_changing_context, :instructions, :fallback_model, :primary_model,
-                :switch_time, :assistant_id, :thread_id, :run_id,
-                :is_creating_assistant_name, :is_creating_assistant_instruction,
-                :mongo_assistant_id, :is_creating_image, :pending_removal_id
-
-  def initialize
-    @is_changing_context = false
-    @instructions = 'Ты персональный ассистент. Помогаешь писать код на RoR с использованием MongoId.'
-    @fallback_model = "gpt-4"
-    @primary_model = "gpt-4-1106-preview"
-    @switch_time = DateTime.now
-    @assistant_id = nil
-    @thread_id = nil
-    @run_id = nil
-    @is_creating_assistant_name = false
-    @is_creating_assistant_instruction = false
-    @mongo_assistant_id = nil
-    @is_creating_image = false
-    @pending_removal_id = nil
-  end
-end
-
 class TelegramGptBot
-
-  @@states = {}
-
   def self.run
     token = ENV['TELEGRAM_BOT_TOKEN']
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
-        puts "Message: #{message.inspect}"
-        if message.from && message.from.id
+
+        if message.from&.id
           user_id = message.from.id
-          @@states[user_id] ||= BotState.new
-          state = @@states[user_id]
+        elsif message.chat&.id
+          user_id = message.chat.id
+        else
+          user_id = "unknown"
         end
+
+        puts "USER ID: #{user_id}"
+
+        user = UserTelegram.find_or_create_by(telegram_id: user_id)
+        state = user.state
+        if state.nil?
+          user.build_state(
+            is_changing_context: false,
+            instructions: 'Ты персональный ассистент. Помогаешь писать код на RoR с использованием MongoId.',
+            fallback_model: "gpt-4",
+            primary_model: "gpt-4-1106-preview",
+            switch_time: DateTime.now,
+            assistant_id: nil,
+            thread_id: nil,
+            run_id: nil,
+            is_creating_assistant_name: false,
+            is_creating_assistant_instruction: false,
+            mongo_assistant_id: nil,
+            is_creating_image: false,
+            pending_removal_id: nil
+          )
+
+          if user.save
+            puts "New user created"
+          else
+            puts "Error creating user #{user.errors.full_messages}"
+          end
+          state = user.state
+        end
+
         if message.is_a?(Telegram::Bot::Types::Message)
           if message.text
             case message.text
             when '/start'
               CommandHandlers.handle_start_command(state, bot, message)
             when '/instructions'
-              state.is_changing_context = true
+              state.update(is_changing_context: true)
               bot.api.send_message(
                 chat_id: message.chat.id,
                 text: "Пожалуйста, введи новую инструкцию для ассистента."
               )
             when '/new_assistant'
-              state.is_creating_assistant_name = true
+              state.update(is_creating_assistant_name:true)
               bot.api.send_message(
                 chat_id: message.chat.id,
                 text: "Введи имя нового ассистента."
@@ -110,15 +116,17 @@ class TelegramGptBot
     if message.is_a?(Telegram::Bot::Types::CallbackQuery)
       # Получаем ID ассистента из callback_data
       id = message.data
-      state.mongo_assistant_id = id
+      state.update(mongo_assistant_id:id)
 
       # Находим ассистента в базе данных
       assistant = ::OpenAiAssistant.find(id)
 
       # Устанавливаем параметры состояния из данных ассистента
-      state.assistant_id = assistant.assistant_id
-      state.thread_id = assistant.thread_id
-      state.instructions = assistant.instructions
+      state.update(
+        assistant_id: assistant.assistant_id,
+        thread_id: assistant.thread_id,
+        instructions: assistant.instructions
+      )
 
       # Отправляем сообщение пользователю о выборе ассистента
       bot.api.send_message(
@@ -128,7 +136,7 @@ class TelegramGptBot
 
       # Теперь, когда выбран ассистент, можно безопасно вызывать create_message и create_run
       OpenAiService.create_message(state.thread_id, "Привет", 'user', [])
-      state.run_id = OpenAiService.create_run(state.assistant_id, state.thread_id)
+      state.run_id = OpenAiService.create_run(state, state.assistant_id, state.thread_id)
 
       # Проверка выполнения
       wait_complete = MessageHandling.check_run_completion(state.run_id, state.thread_id)
