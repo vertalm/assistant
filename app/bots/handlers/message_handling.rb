@@ -33,11 +33,24 @@ module MessageHandling
 
     last_message = OpenAiService.get_last_message(state.thread_id)
     puts "last_message: #{last_message}"
-    bot.api.send_message(
-      chat_id: message.chat.id,
-      text: last_message,
-      parse_mode: 'Markdown'
-    )
+
+    # Если длина последнего сообщения больше 4096 символов, то разбиваем его на несколько сообщений
+    if last_message.length > 4096
+      last_message.scan(/.{1,4096}/m).each do |message_part|
+        bot.api.send_message(
+          chat_id: message.chat.id,
+          text: message_part,
+          parse_mode: 'Markdown'
+        )
+      end
+      return
+    else
+      bot.api.send_message(
+        chat_id: message.chat.id,
+        text: last_message,
+        parse_mode: 'Markdown'
+      )
+    end
 
   end
 
@@ -175,11 +188,23 @@ module MessageHandling
 
       last_message = OpenAiService.get_last_message(state.thread_id)
       puts "last_message: #{last_message}"
-      bot.api.send_message(
-        chat_id: message.chat.id,
-        text: last_message,
-        parse_mode: 'Markdown'
-      )
+      # Если длина сообщения превышает 4096 символов, разбиваем его на несколько сообщений
+      if last_message.length > 4096
+        last_message.scan(/.{1,4096}/m) do |message_part|
+          bot.api.send_message(
+            chat_id: message.chat.id,
+            text: message_part,
+            parse_mode: 'Markdown'
+          )
+        end
+        return
+      else
+        bot.api.send_message(
+          chat_id: message.chat.id,
+          text: last_message,
+          parse_mode: 'Markdown'
+        )
+      end
     end
   end
 
