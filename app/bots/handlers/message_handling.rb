@@ -8,7 +8,8 @@ module MessageHandling
     )
 
     puts "FILE CONTENT: #{file_content}"
-    resp = OpenAiService.create_message(state.thread_id, file_content, 'user', [])
+    name_and_content = file_name + "\n" + file_content
+    resp = OpenAiService.create_message(state.thread_id, name_and_content, 'user', [])
     if resp == false
       bot.api.send_message(
         chat_id: message.chat.id,
