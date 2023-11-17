@@ -16,6 +16,11 @@ module MessageHandling
         text: "Прости, начни сначала",
         parse_mode: 'Markdown'
       )
+      bot.api.send_message(
+        chat_id: message.chat.id,
+        text: resp.inspect,
+        parse_mode: 'Markdown'
+      )
       return
     end
 
