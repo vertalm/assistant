@@ -39,8 +39,7 @@ module MessageHandling
       last_message.scan(/.{1,4096}/m).each do |message_part|
         bot.api.send_message(
           chat_id: message.chat.id,
-          text: message_part,
-          parse_mode: 'Markdown'
+          text: message_part
         )
       end
       return
@@ -193,8 +192,7 @@ module MessageHandling
         last_message.scan(/.{1,4096}/m) do |message_part|
           bot.api.send_message(
             chat_id: message.chat.id,
-            text: message_part,
-            parse_mode: 'Markdown'
+            text: message_part
           )
         end
         return
