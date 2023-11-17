@@ -184,13 +184,26 @@ module MessageHandling
   end
 
   def self.check_run_completion(run_id, thread_id)
-    max_retries = 60 # Ограничение количества попыток
+    max_retries = 600   # Ограничение количества попыток
     tries = 0
+    sleep_time = 1
+    start_time = Time.now
 
     while tries < max_retries
-      sleep(1)
+      sleep(sleep_time)
       status_body = OpenAiService.run_check(thread_id, run_id)
       return status_body if status_body['status'] == 'completed'
+
+      elapsed_time = Time.now - start_time
+      sleep_time = if elapsed_time > 5 * 60 # Прошло более 5 минут
+                     10
+                   elsif elapsed_time > 60 # Прошло более 1 минуты
+                     5
+                   elsif tries > 10
+                     3
+                   else
+                     1
+                   end
 
       tries += 1
     end
