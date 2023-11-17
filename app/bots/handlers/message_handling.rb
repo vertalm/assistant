@@ -8,7 +8,7 @@ module MessageHandling
     )
 
     puts "FILE CONTENT: #{file_content}"
-    name_and_content = file_name + "\n" + file_content
+    name_and_content = file_name + "\n" + file_content + "\n Don't answer, just remember file content"
     resp = OpenAiService.create_message(state.thread_id, name_and_content, 'user', [])
     if resp == false
       bot.api.send_message(
