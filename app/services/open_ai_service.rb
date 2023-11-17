@@ -137,6 +137,7 @@ class OpenAiService
 
     response = HTTParty.get(endpoint, headers: @headers)
     response_body = JSON.parse(response.body)
+    puts "RESPONSE BODY RUN CHECK #{response_body.inspect}"
     response_body
   end
 
@@ -145,6 +146,8 @@ class OpenAiService
 
     response = HTTParty.get(endpoint, headers: @headers)
     response_body = JSON.parse(response.body)
+
+    puts "RESPONSE BODY GET LAST MESSAGE: #{response_body.inspect}"
 
     # Проверка успешности запроса
     if response.success?
