@@ -13,7 +13,7 @@ module MessageHandling
     if resp == false
       bot.api.send_message(
         chat_id: message.chat.id,
-        text: "Прости, начни сначала thread_id: #{state.thread_id}",
+        text: 'Прости, начни сначала /start',
         parse_mode: 'Markdown'
       )
       return
