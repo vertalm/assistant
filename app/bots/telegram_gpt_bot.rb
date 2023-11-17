@@ -30,11 +30,15 @@ end
 
 class TelegramGptBot
 
+  @@states = {}
+
   def self.run
-    state = BotState.new
     token = ENV['TELEGRAM_BOT_TOKEN']
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
+        user_id = message.chat.id
+        @@states[user_id] ||= BotState.new
+        state = @@states[user_id]
         if message.is_a?(Telegram::Bot::Types::Message)
           if message.text
             case message.text
