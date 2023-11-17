@@ -6,6 +6,7 @@ module CommandHandlers
     help_text += "/new_assistant - Создать нового ассистента\n"
     help_text += "/new_image - Создать изображение с помощью описания\n"
     help_text += "/instructions - Изменить инструкции для ассистента и создать новый диалог с ним\n"
+    help_text += "/remove_assistant - Удалить ассистента\n"
 
     bot.api.send_message(
       chat_id: message.chat.id,

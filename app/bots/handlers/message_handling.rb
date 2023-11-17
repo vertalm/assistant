@@ -231,6 +231,9 @@ module MessageHandling
     while tries < max_retries
       sleep(sleep_time)
       status_body = OpenAiService.run_check(thread_id, run_id)
+      if status_body['error'] && status_body['error']['type'] == 'invalid_request_error'
+        return false
+      end
       return status_body if status_body['status'] == 'completed' || status_body['status'] == 'failed'
 
 
