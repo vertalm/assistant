@@ -36,6 +36,7 @@ class TelegramGptBot
     token = ENV['TELEGRAM_BOT_TOKEN']
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
+        puts "Message: #{message.inspect}"
         if message.from && message.from.id
           user_id = message.from.id
           @@states[user_id] ||= BotState.new
