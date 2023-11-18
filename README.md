@@ -36,6 +36,7 @@
 
 4. Создайте файл конфигурации .env в директории app с следующим содержимым
 
+```
 TELEGRAM_BOT_TOKEN=***
 CHAT_GPT_TOKEN=***
 
@@ -48,6 +49,7 @@ MONGO_DB_PROD=***
 MONGO_USER_PROD=***
 MONGO_HOST_PROD=***
 MONGO_PASSWORD_PROD=***
+```
 
 ### Конфигурация базы данных MongoDB
 
