@@ -49,6 +49,8 @@ MONGO_DB_PROD=***
 MONGO_USER_PROD=***
 MONGO_HOST_PROD=***
 MONGO_PASSWORD_PROD=***
+
+ADMINISTRATOR_USERNAME=https://t.me/***
 ```
 
 ### Конфигурация базы данных MongoDB
