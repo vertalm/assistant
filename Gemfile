@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.2"
+ruby "3.2.2" # Specify your Ruby version
 gem 'telegram-bot-ruby'
 gem 'webpacker', '~> 5.0'
 gem 'whenever'
