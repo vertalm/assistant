@@ -13,15 +13,21 @@ class TelegramGptBot
 
         if message.from&.id
           user_id = message.from.id
+          telegram_username = message.from.username || ''
         elsif message.chat&.id
           user_id = message.chat.id
+          telegram_username = ''
         else
           user_id = "unknown"
+          telegram_username = ''
         end
 
         puts "USER ID: #{user_id}"
 
         user = UserTelegram.find_or_create_by(telegram_id: user_id)
+        user.update(
+          telegram_username: telegram_username
+        )
         state = user.state
         if state.nil?
           user.build_state(

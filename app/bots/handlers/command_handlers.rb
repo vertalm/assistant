@@ -44,9 +44,13 @@ module CommandHandlers
 
   def self.handle_start_command(state, bot, message)
     user_id = message.from.id
+    username = message.from.username || ''
     user = ::UserTelegram.where(telegram_id: user_id).first
     if user.nil?
-      user = ::UserTelegram.new(telegram_id: user_id)
+      user = ::UserTelegram.new(
+        telegram_id: user_id,
+        telegram_username: username
+      )
       user.save
     end
     assistants = user.open_ai_assistants
