@@ -51,22 +51,47 @@ class TelegramGptBot
         if message.is_a?(Telegram::Bot::Types::Message)
           if message.text
 
+            if state[:is_creating_image] == true
+              type = "IMAGE"
+            else
+              type = "MESSAGE"
+            end
+
             user_telegram = UserTelegram.where(telegram_id: user_id).first
             user_telegram.usages.create(
               message_text: message.text,
+              message_length: message.text.length,
+              type: type,
               date: Date.today
             )
             today_usage = user_telegram.usages.where(
               date: Date.today
             ).count
+            today_total_message_length = user_telegram.usages.where(
+              date: Date.today
+            ).sum(:message_length)
+
             puts "TODAY USAGE: #{today_usage}"
+            puts "TODAY TOTAL MESSAGE LENGTH: #{today_total_message_length}"
+
             user_telegram = UserTelegram.where(telegram_id: user_id).first
             puts "DAY LIMIT: #{user_telegram[:daily_limit]}"
+            puts "DAY LENGTH LIMIT: #{user_telegram[:message_day_length_limit]}"
+
             if user_telegram[:daily_limit] < today_usage
               # Сообщение о том, что превышен суточный лимит
               bot.api.send_message(
                 chat_id: message.chat.id,
-                text: "Превышен суточный лимит сообщений. Обратитесь к администратору " + ENV['ADMINISTRATOR_USERNAME'] + " для увеличения лимита"
+                text: "Превышен суточный лимит сообщений #{user_telegram[:daily_limit]}. Обратитесь к администратору " + ENV['ADMINISTRATOR_USERNAME'] + " для увеличения лимита"
+              )
+              next
+            end
+
+            if user_telegram[:message_day_length_limit] < today_total_message_length
+              # Сообщение о том, что превышен суточный лимит
+              bot.api.send_message(
+                chat_id: message.chat.id,
+                text: "Превышен суточный лимит символов #{user_telegram[:message_day_length_limit]}. Обратитесь к администратору " + ENV['ADMINISTRATOR_USERNAME'] + " для увеличения лимита"
               )
               next
             end
@@ -102,24 +127,6 @@ class TelegramGptBot
             end
           elsif message.document
 
-            user_telegram = UserTelegram.where(telegram_id: user_id).first
-            user_telegram.usages.create(
-              message_text: message.text,
-              date: Date.today
-            )
-            today_usage = user_telegram.usages.where(
-              date: Date.today
-            ).count
-
-            if user_telegram[:daily_limit] < today_usage
-              # Сообщение о том, что превышен суточный лимит
-              bot.api.send_message(
-                chat_id: message.chat.id,
-                text: "Превышен суточный лимит сообщений. Обратитесь к администратору https://t.me/vertalm для увеличения лимита"
-              )
-              next
-            end
-
             file_id = message.document.file_id
             file_info = bot.api.get_file(file_id: file_id)
             file_path = file_info['result']['file_path']
@@ -128,6 +135,52 @@ class TelegramGptBot
             file = URI.open(file_url)
             file_data = file.read
             file.close
+
+            if state[:is_creating_image] == true
+              type = "IMAGE"
+            else
+              type = "MESSAGE"
+            end
+
+            user_telegram = UserTelegram.where(telegram_id: user_id).first
+            user_telegram.usages.create(
+              message_text: file_data,
+              message_length: file_data.to_s.length,
+              type: type,
+              date: Date.today
+            )
+            today_usage = user_telegram.usages.where(
+              date: Date.today
+            ).count
+            today_total_message_length = user_telegram.usages.where(
+              date: Date.today
+            ).sum(:message_length)
+
+            puts "TODAY USAGE: #{today_usage}"
+            puts "TODAY TOTAL MESSAGE LENGTH: #{today_total_message_length}"
+
+            user_telegram = UserTelegram.where(telegram_id: user_id).first
+            puts "DAY LIMIT: #{user_telegram[:daily_limit]}"
+            puts "DAY LENGTH LIMIT: #{user_telegram[:message_day_length_limit]}"
+
+            if user_telegram[:daily_limit] < today_usage
+              # Сообщение о том, что превышен суточный лимит
+              bot.api.send_message(
+                chat_id: message.chat.id,
+                text: "Превышен суточный лимит сообщений #{user_telegram[:daily_limit]}. Обратитесь к администратору " + ENV['ADMINISTRATOR_USERNAME'] + " для увеличения лимита"
+              )
+              next
+            end
+
+            if user_telegram[:message_day_length_limit] < today_total_message_length
+              # Сообщение о том, что превышен суточный лимит
+              bot.api.send_message(
+                chat_id: message.chat.id,
+                text: "Превышен суточный лимит символов #{user_telegram[:message_day_length_limit]}. Обратитесь к администратору " + ENV['ADMINISTRATOR_USERNAME'] + " для увеличения лимита"
+              )
+              next
+            end
+
             MessageHandling.handle_message_with_file(state, bot, message, file_data, file_name)
 
           end
