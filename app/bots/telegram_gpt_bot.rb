@@ -261,7 +261,13 @@ class TelegramGptBot
     if url.nil?
       return
     end
-    website_data = WebBrowserService.scrape(url)
+
+    website_data = nil
+    begin
+      website_data = WebBrowserService.scrape(url)
+    rescue
+      #
+    end
     if website_data.nil?
       bot.api.send_message(
         chat_id: message.chat.id,
