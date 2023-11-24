@@ -5,6 +5,7 @@ class UserTelegram
   field :telegram_username, type: String
   field :daily_limit, type: Integer, default: ENV['MESSAGE_AMOUNT_DAY_LIMIT'].to_i
   field :message_day_length_limit, type: Integer, default: ENV['MESSAGE_DAY_LENGTH_LIMIT'].to_i
+  field :purchased_messages_amount, type: Integer, default: 0
   field :images_amount_day_limit, type: Integer, default: ENV['IMAGES_AMOUNT_DAY_LIMIT'].to_i
 
   has_many :open_ai_assistants, class_name: OpenAiAssistant, dependent: :destroy

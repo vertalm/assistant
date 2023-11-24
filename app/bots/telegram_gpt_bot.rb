@@ -76,6 +76,7 @@ class TelegramGptBot
             today_total_message_length = user_telegram.usages.where(
               date: Date.today
             ).sum(:message_length)
+            purchased_messages_amount = user_telegram[:purchased_messages_amount].to_i
 
             puts "TODAY USAGE: #{today_usage}"
             puts "TODAY TOTAL MESSAGE LENGTH: #{today_total_message_length}"
@@ -84,7 +85,7 @@ class TelegramGptBot
             puts "DAY LIMIT: #{user_telegram[:daily_limit]}"
             puts "DAY LENGTH LIMIT: #{user_telegram[:message_day_length_limit]}"
 
-            if user_telegram[:daily_limit] < today_usage
+            if user_telegram[:daily_limit] < today_usage && purchased_messages_amount <= 0
               # Сообщение о том, что превышен суточный лимит
               bot.api.send_message(
                 chat_id: message.chat.id,
@@ -93,7 +94,7 @@ class TelegramGptBot
               next
             end
 
-            if user_telegram[:message_day_length_limit] < today_total_message_length
+            if user_telegram[:message_day_length_limit] < today_total_message_length && purchased_messages_amount <= 0
               # Сообщение о том, что превышен суточный лимит
               bot.api.send_message(
                 chat_id: message.chat.id,
@@ -124,6 +125,9 @@ class TelegramGptBot
             when '/help'
               CommandHandlers.handle_help_command(bot, message)
             else
+              if purchased_messages_amount > 0
+                user_telegram.update(purchased_messages_amount: purchased_messages_amount - 1)
+              end
               website_data = handle_website_visit_command(state, bot, message)
               if website_data
                 MessageHandling.handle_default_message(state, bot, message, website_data)
@@ -161,6 +165,7 @@ class TelegramGptBot
             today_total_message_length = user_telegram.usages.where(
               date: Date.today
             ).sum(:message_length)
+            purchased_messages_amount = user_telegram[:purchased_messages_amount].to_i
 
             puts "TODAY USAGE: #{today_usage}"
             puts "TODAY TOTAL MESSAGE LENGTH: #{today_total_message_length}"
@@ -169,7 +174,7 @@ class TelegramGptBot
             puts "DAY LIMIT: #{user_telegram[:daily_limit]}"
             puts "DAY LENGTH LIMIT: #{user_telegram[:message_day_length_limit]}"
 
-            if user_telegram[:daily_limit] < today_usage
+            if user_telegram[:daily_limit] < today_usage && purchased_messages_amount <= 0
               # Сообщение о том, что превышен суточный лимит
               bot.api.send_message(
                 chat_id: message.chat.id,
@@ -178,7 +183,7 @@ class TelegramGptBot
               next
             end
 
-            if user_telegram[:message_day_length_limit] < today_total_message_length
+            if user_telegram[:message_day_length_limit] < today_total_message_length && purchased_messages_amount <= 0
               # Сообщение о том, что превышен суточный лимит
               bot.api.send_message(
                 chat_id: message.chat.id,
@@ -187,6 +192,9 @@ class TelegramGptBot
               next
             end
 
+            if purchased_messages_amount > 0
+              user_telegram.update(purchased_messages_amount: purchased_messages_amount - 1)
+            end
             MessageHandling.handle_message_with_file(state, bot, message, file_data, file_name)
 
           end
