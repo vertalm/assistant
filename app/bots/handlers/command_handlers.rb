@@ -96,6 +96,15 @@ module CommandHandlers
         thread_id = OpenAiService.create_thread(state)
         assistant.update(thread_id: thread_id)
 
+        assistant_name = 'Снежана'
+        new_instructions = 'Ты женщина 40 лет, красивая, следящая за собой, веселая, любишь шутить, красиво одеваться, смеяться. Немного повернута на разных эзотерических практиках, веришь в магию и сверъестественное. Хочу, чтобы ты давала мне советы, когда я тебе обращаюсь.'
+        assistant = ::OpenAiAssistant.create(assistant_name: assistant_name, user_telegram: user)
+        assistant.update(instructions: new_instructions)
+        assistant_id = OpenAiService.create_assistant(state, new_instructions)
+        assistant.update(assistant_id: assistant_id)
+        thread_id = OpenAiService.create_thread(state)
+        assistant.update(thread_id: thread_id)
+
         assistants = user.open_ai_assistants
 
         status.update(

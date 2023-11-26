@@ -1,5 +1,8 @@
 class UserTelegram
   include Mongoid::Document
+  include Mongoid::Timestamps
+  include Mongoid::Timestamps::Created
+  include Mongoid::Timestamps::Updated
 
   field :telegram_id, type: Integer
   field :telegram_username, type: String

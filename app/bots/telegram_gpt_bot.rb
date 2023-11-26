@@ -55,6 +55,17 @@ class TelegramGptBot
         end
 
         if message.is_a?(Telegram::Bot::Types::Message)
+          # Проверяем, прошло ли 10 дней с момента первого сообщения пользователя
+          if (DateTime.now.utc.to_date - user.created_at.to_date).to_i > 10
+            # Если прошло больше 10 дней, отправляем сообщение о закончившемся пробном периоде
+            bot.api.send_message(
+              chat_id: message.chat.id,
+              text: "Пробный период закончился. Если хотите продолжать использовать бота, обратитесь к администратору #{ENV['ADMINISTRATOR_USERNAME']} для увеличения лимита"
+            )
+            # Завершаем обработку этого сообщения, чтобы не продолжать выполнение других команд
+            next
+          end
+
           if message.text
 
             if state[:is_creating_image] == true
@@ -256,11 +267,13 @@ class TelegramGptBot
       end
 
       # Отправка сообщения пользователю
+=begin
       bot.api.send_message(
         chat_id: message.from.id,
         text: "Привет, ты выбрал ассистента #{assistant.assistant_name} с инструкцией #{assistant.instructions}.",
         parse_mode: 'Markdown'
       )
+=end
     end
   end
 
