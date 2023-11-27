@@ -56,6 +56,10 @@ class TelegramGptBot
 
         if message.is_a?(Telegram::Bot::Types::Message)
           # Проверяем, прошло ли 10 дней с момента первого сообщения пользователя
+          if user.created_at.nil?
+            user.created_at = DateTime.now.utc
+            user.save
+          end
           if (DateTime.now.utc.to_date - user.created_at.to_date).to_i > 10
             # Если прошло больше 10 дней, отправляем сообщение о закончившемся пробном периоде
             bot.api.send_message(
