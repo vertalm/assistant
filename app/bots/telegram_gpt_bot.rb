@@ -176,12 +176,16 @@ class TelegramGptBot
             end
 
             user_telegram = UserTelegram.where(telegram_id: user_id).first
-            user_telegram.usages.create(
-              message_text: file_data,
-              message_length: file_data.to_s.length,
-              type: type,
-              date: Date.today
-            )
+            begin
+              user_telegram.usages.create(
+                message_text: file_data,
+                message_length: file_data.to_s.length,
+                type: type,
+                date: Date.today
+              )
+            rescue
+              # Сообщение о том, что превышен суточный лимит
+            end
             today_usage = user_telegram.usages.where(
               date: Date.today
             ).count
