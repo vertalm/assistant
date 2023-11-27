@@ -167,7 +167,6 @@ class TelegramGptBot
                 text: "Не удалось загрузить файл. Сейчас бот работает только с текстовыми файлами."
               )
               file_data = ''
-              next
             end
 
             if state[:is_creating_image] == true
