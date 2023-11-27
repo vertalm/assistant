@@ -148,14 +148,22 @@ class TelegramGptBot
             end
           elsif message.document
 
-            file_id = message.document.file_id
-            file_info = bot.api.get_file(file_id: file_id)
-            file_path = file_info['result']['file_path']
-            file_url = "https://api.telegram.org/file/bot#{token}/#{file_path}"
-            file_name = message.document.file_name
-            file = URI.open(file_url)
-            file_data = file.read
-            file.close
+            begin
+              file_id = message.document.file_id
+              file_info = bot.api.get_file(file_id: file_id)
+              file_path = file_info['result']['file_path']
+              file_url = "https://api.telegram.org/file/bot#{token}/#{file_path}"
+              file_name = message.document.file_name
+              file = URI.open(file_url)
+              file_data = file.read
+              file.close
+            rescue
+              bot.api.send_message(
+                chat_id: message.chat.id,
+                text: "Не удалось загрузить файл. Сейчас бот работает только с текстовыми файлами."
+              )
+              next
+            end
 
             if state[:is_creating_image] == true
               type = "IMAGE"
