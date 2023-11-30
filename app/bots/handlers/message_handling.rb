@@ -56,6 +56,7 @@ module MessageHandling
           text: "Прости, начни сначала /start",
           parse_mode: 'Markdown'
         )
+      end
     end
 
   end
