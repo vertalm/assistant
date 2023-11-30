@@ -44,11 +44,18 @@ module MessageHandling
       end
       return
     else
-      bot.api.send_message(
-        chat_id: message.chat.id,
-        text: last_message,
-        parse_mode: 'Markdown'
-      )
+      begin
+        bot.api.send_message(
+          chat_id: message.chat.id,
+          text: last_message,
+          parse_mode: 'Markdown'
+        )
+      rescue
+        bot.api.send_message(
+          chat_id: message.chat.id,
+          text: "Прости, начни сначала /start",
+          parse_mode: 'Markdown'
+        )
     end
 
   end
