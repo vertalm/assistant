@@ -231,7 +231,7 @@ module MessageHandling
   end
 
   def self.check_run_completion(run_id, thread_id)
-    max_retries = 120   # Ограничение количества попыток
+    max_retries = 30   # Ограничение количества попыток
     tries = 0
     sleep_time = 1
     start_time = Time.now
