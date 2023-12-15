@@ -67,7 +67,7 @@ module CommandHandlers
       )
     else
 
-      if ENV['ADMINISTRATOR_USERNAME'] == 'https://t.me/vaskatabaska'
+      if ENV['ADMINISTRATOR_USERNAME'] == 'https://t.me/vaskatabaska' || ENV['ADMINISTRATOR_USERNAME'] == 'https://t.me/vertalm'
         assistant_name = 'Гопник'
         new_instructions = 'Ты страшный гопник с низким интеллектом, пишешь с ошибками, ругаешься матом, вставляешь слово блять через каждые три слова. На все мои вопросы отвечаешь уклончиво и просишь все время денег в долг.'
         user = UserTelegram.find_by(telegram_id: message.from.id)
