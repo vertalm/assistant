@@ -114,6 +114,7 @@ class TelegramGptBot
 
             case message.text
             when '/start'
+              CommandHandlers.handle_help_command(bot, message)
               CommandHandlers.handle_start_command(state, bot, message)
             when '/instructions'
               state.update(is_changing_context: true)
