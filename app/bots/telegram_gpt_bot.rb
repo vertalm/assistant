@@ -79,12 +79,6 @@ class TelegramGptBot
             end
 
             user_telegram = UserTelegram.where(telegram_id: user_id).first
-            user_telegram.usages.create(
-              message_text: message.text,
-              message_length: message.text.length,
-              type: type,
-              date: Date.today
-            )
             today_usage = user_telegram.usages.where(
               date: Date.today
             ).count
@@ -140,6 +134,15 @@ class TelegramGptBot
             when '/help'
               CommandHandlers.handle_help_command(bot, message)
             else
+
+              user_telegram = ::UserTelegram.where(telegram_id: user_id).first
+              user_telegram.usages.create(
+                message_text: message.text,
+                message_length: message.text.length,
+                type: type,
+                date: Date.today
+              )
+
               if purchased_messages_amount > 0
                 user_telegram.update(purchased_messages_amount: purchased_messages_amount - 1)
               end
