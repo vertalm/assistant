@@ -51,6 +51,8 @@ module AssistantManagement
         text: "Ассистент #{assistant.assistant_name} выбран."
       )
 
+=begin
+
       OpenAiService.create_message(state.thread_id, "Привет", 'user', [])
       run_id = OpenAiService.create_run(state, assistant.assistant_id, assistant.thread_id)
 
@@ -64,13 +66,16 @@ module AssistantManagement
         )
         return
       end
+=end
 
       # Отправка сообщения пользователю
+=begin
       bot.api.send_message(
         chat_id: message.from.id,
         text: "Привет, ты выбрал ассистента #{assistant.assistant_name} с инструкцией #{assistant.instructions}.",
         parse_mode: 'Markdown'
       )
+=end
     end
   end
 end
