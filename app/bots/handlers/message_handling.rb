@@ -244,8 +244,9 @@ module MessageHandling
       end
 
       if status_body['status'] == 'completed' || status_body['status'] == 'failed'
-        Rails.logger.info("Run completed: #{status_body}")
-        user.usage.update(
+        Rails.logger.info("Run completed update usage: #{status_body}")
+        last_user_usage = user.usage.last
+        last_user_usage.update(
           prompt_tokens: user.usage.prompt_tokens + status_body['usage']['prompt_tokens'],
           completion_tokens: user.usage.completion_tokens + status_body['usage']['completion_tokens'],
           total_tokens: user.usage.total_tokens + status_body['usage']['total_tokens']
