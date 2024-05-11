@@ -1,6 +1,6 @@
 module MessageHandling
 
-  def self.handle_message_with_file(state, bot, message, file_content, file_name)
+  def self.handle_message_with_file(state, bot, message, file_content, file_name, user)
 
     bot.api.send_message(
       chat_id: message.chat.id,
@@ -22,7 +22,7 @@ module MessageHandling
     state.update(
       run_id:run_id
     )
-    wait_complete = check_run_completion(run_id, state.thread_id)
+    wait_complete = check_run_completion(run_id, state.thread_id, user)
     if wait_complete == false
       bot.api.send_message(
         chat_id: message.chat.id,
@@ -154,7 +154,7 @@ module MessageHandling
       run_id = OpenAiService.create_run(state, state.assistant_id, state.thread_id)
       state.update(run_id: run_id)
 
-      wait_complete = check_run_completion(run_id, state.thread_id)
+      wait_complete = check_run_completion(run_id, state.thread_id, user)
       if wait_complete == false
         bot.api.send_message(
           chat_id: message.chat.id,
@@ -200,7 +200,7 @@ module MessageHandling
       puts "ASSISTANT_ID: #{state.assistant_id}"
       puts "THREAD_ID: #{state.thread_id}"
       puts "RUN_ID: #{run_id}"
-      wait_complete = check_run_completion(run_id, state.thread_id)
+      wait_complete = check_run_completion(run_id, state.thread_id, user)
       if wait_complete == false
         bot.api.send_message(
           chat_id: message.chat.id,
@@ -230,7 +230,7 @@ module MessageHandling
     end
   end
 
-  def self.check_run_completion(run_id, thread_id)
+  def self.check_run_completion(run_id, thread_id, user)
     max_retries = 30   # Ограничение количества попыток
     tries = 0
     sleep_time = 1
@@ -242,6 +242,16 @@ module MessageHandling
       if status_body['error'] && status_body['error']['type'] == 'invalid_request_error'
         return false
       end
+
+      if status_body['status'] == 'completed' || status_body['status'] == 'failed'
+        Rails.logger.info("Run completed: #{status_body}")
+        user.usage.update(
+          prompt_tokens: user.usage.prompt_tokens + status_body['usage']['prompt_tokens'],
+          completion_tokens: user.usage.completion_tokens + status_body['usage']['completion_tokens'],
+          total_tokens: user.usage.total_tokens + status_body['usage']['total_tokens']
+        )
+      end
+
       return status_body if status_body['status'] == 'completed' || status_body['status'] == 'failed'
 
 

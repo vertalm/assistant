@@ -231,7 +231,7 @@ class TelegramGptBot
             if purchased_messages_amount > 0
               user_telegram.update(purchased_messages_amount: purchased_messages_amount - 1)
             end
-            MessageHandling.handle_message_with_file(state, bot, message, file_data, file_name)
+            MessageHandling.handle_message_with_file(state, bot, message, file_data, file_name, user)
 
           end
         elsif message.is_a?(Telegram::Bot::Types::CallbackQuery)
@@ -253,7 +253,7 @@ class TelegramGptBot
     end
   end
 
-  def self.handle_assistant_selection(state, bot, message)
+  def self.handle_assistant_selection(state, bot, message, user)
     # Проверяем, что сообщение является ответом на запрос выбора ассистента
     if message.is_a?(Telegram::Bot::Types::CallbackQuery)
       # Получаем ID ассистента из callback_data
@@ -281,7 +281,7 @@ class TelegramGptBot
       state.run_id = OpenAiService.create_run(state, state.assistant_id, state.thread_id)
 
       # Проверка выполнения
-      wait_complete = MessageHandling.check_run_completion(state.run_id, state.thread_id)
+      wait_complete = MessageHandling.check_run_completion(state.run_id, state.thread_id, user)
       if wait_complete == false
         bot.api.send_message(
           chat_id: message.chat.id,

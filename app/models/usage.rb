@@ -8,6 +8,9 @@ class Usage
   field :message_text, type: String
   field :message_length, type: Integer, default: 0
   field :type, type: String, default: 'MESSAGE'
+  field :prompt_tokens, type: Integer, default: 0
+  field :completion_tokens, type: Integer, default: 0
+  field :total_tokens, type: Integer, default: 0
 
   belongs_to :user_telegram
 end
