@@ -34,7 +34,7 @@ class TelegramGptBot
             is_changing_context: false,
             instructions: 'Ты персональный ассистент. Помогаешь писать код на RoR с использованием MongoId.',
             fallback_model: "gpt-4",
-            primary_model: "gpt-4-1106-preview",
+            primary_model: "gpt-4-turbo",
             switch_time: DateTime.now,
             assistant_id: nil,
             thread_id: nil,
@@ -56,6 +56,7 @@ class TelegramGptBot
 
         if message.is_a?(Telegram::Bot::Types::Message)
           # Проверяем, прошло ли 10 дней с момента первого сообщения пользователя
+=begin
           if user.created_at.nil?
             user.created_at = DateTime.now.utc
             user.save
@@ -69,6 +70,7 @@ class TelegramGptBot
             # Завершаем обработку этого сообщения, чтобы не продолжать выполнение других команд
             next
           end
+=end
 
           if message.text
 
@@ -285,15 +287,6 @@ class TelegramGptBot
         )
         return
       end
-
-      # Отправка сообщения пользователю
-=begin
-      bot.api.send_message(
-        chat_id: message.from.id,
-        text: "Привет, ты выбрал ассистента #{assistant.assistant_name} с инструкцией #{assistant.instructions}.",
-        parse_mode: 'Markdown'
-      )
-=end
     end
   end
 

@@ -21,7 +21,7 @@ class OpenAiService
   end
 
   def self.create_assistant(state, instructions)
-    model = 'gpt-4-1106-preview'
+    model = 'gpt-4-turbo'
     name = 'OpenAiPostAssistant chat'
     description = 'OpenAiAssistant for fill chats'
 
