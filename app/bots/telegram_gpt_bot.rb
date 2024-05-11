@@ -122,7 +122,13 @@ class TelegramGptBot
             tokens_used_prompt_tokens = user[:tokens_used_prompt_tokens] || 0
             tokens_used_completion_tokens = user[:tokens_used_completion_tokens] || 0
 
-            if tokens_used_prompt_tokens > tokens_ordered_prompt_tokens || tokens_used_completion_tokens > tokens_ordered_completion_tokens
+            # check is message text format DE5F-WG3F-QW43-4F3F
+            message_license = false
+            if message.text.match?(/\b[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}\b/)
+              message_license = true
+            end
+
+            if message_license == false && (tokens_used_prompt_tokens > tokens_ordered_prompt_tokens || tokens_used_completion_tokens > tokens_ordered_completion_tokens)
               # Сообщение о том, что превышен лимит токенов и что можно купить новые по адресу https://dev.opuna.com/page/products
               bot.api.send_message(
                 chat_id: message.chat.id,
