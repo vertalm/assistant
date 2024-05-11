@@ -1,5 +1,6 @@
 class OpenAiAssistant
   include Mongoid::Document
+  include Mongoid::Timestamps
 
   field :assistant_name, type: String
   field :instructions, type: String

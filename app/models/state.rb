@@ -1,5 +1,6 @@
 class State
   include Mongoid::Document
+  include Mongoid::Timestamps
 
   field :is_changing_context, type: Boolean, default: false
   field :instructions, type: String, default: 'Ты персональный ассистент.'
