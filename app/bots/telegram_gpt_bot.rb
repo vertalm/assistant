@@ -157,12 +157,18 @@ class TelegramGptBot
               tokens_used_prompt_tokens_left = tokens_ordered_prompt_tokens - tokens_used_prompt_tokens
               tokens_used_completion_tokens_left = tokens_ordered_completion_tokens - tokens_used_completion_tokens
 
+              context_window = state[:context_window] || 10
+              if context_window < 4
+                context_window = 4
+              end
               # у вас осталось
               bot.api.send_message(
                 chat_id: message.chat.id,
-                text: "You have left: \n
-                        prompt tokens: #{tokens_used_prompt_tokens_left} \n
-                        completion tokens: #{tokens_used_completion_tokens_left}"
+                text: "You have left:
+                        prompt tokens: #{tokens_used_prompt_tokens_left}
+                        completion tokens: #{tokens_used_completion_tokens_left}
+                        context window: #{context_window}
+                       "
               )
 
             when '/enter_license_code'
