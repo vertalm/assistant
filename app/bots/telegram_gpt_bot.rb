@@ -96,6 +96,8 @@ class TelegramGptBot
             puts "DAY LIMIT: #{user_telegram[:daily_limit]}"
             puts "DAY LENGTH LIMIT: #{user_telegram[:message_day_length_limit]}"
 
+=begin
+
             if user_telegram[:daily_limit] < today_usage && purchased_messages_amount <= 0
               # Сообщение о том, что превышен суточный лимит
               bot.api.send_message(
@@ -113,6 +115,7 @@ class TelegramGptBot
               )
               next
             end
+=end
 
             case message.text
             when '/start'
