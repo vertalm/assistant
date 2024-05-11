@@ -65,6 +65,19 @@ module MessageHandling
 
   def self.handle_default_message(state, bot, message, website_data = '', file_ids = [])
 
+    if message.from&.id
+      user_id = message.from.id
+      telegram_username = message.from.username || ''
+    elsif message.chat&.id
+      user_id = message.chat.id
+      telegram_username = ''
+    else
+      user_id = "unknown"
+      telegram_username = ''
+    end
+
+    user = UserTelegram.find_by(telegram_id: user_id)
+
     if state.is_creating_image && message.text
       image_description = message.text
       state.update(is_creating_image:false)
@@ -200,6 +213,7 @@ module MessageHandling
       puts "ASSISTANT_ID: #{state.assistant_id}"
       puts "THREAD_ID: #{state.thread_id}"
       puts "RUN_ID: #{run_id}"
+
       wait_complete = check_run_completion(run_id, state.thread_id, user)
       if wait_complete == false
         bot.api.send_message(
