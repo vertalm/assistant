@@ -120,7 +120,11 @@ class OpenAiService
     endpoint = "https://api.openai.com/v1/threads/#{thread_id}/runs"
 
     body = {
-      'assistant_id' => assistant_id
+      'assistant_id' => assistant_id,
+      'truncation_strategy' => {
+        'type' => 'last_messages',
+        'last_messages' => 10,
+      }
     }.to_json
 
     response = HTTParty.post(endpoint, body: body, headers: @headers)
