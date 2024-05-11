@@ -148,6 +148,19 @@ module MessageHandling
         chat_id: message.chat.id,
         text: "Assistant name: #{assistant_name}, \n\nplease provide assistant instruction"
       )
+    elsif state.is_changing_context_window
+      new_context_window = message.text.to_i
+      if new_context_window < 4
+        new_context_window = 4
+      end
+      state.update(
+        is_changing_context_window:false,
+        context_window:new_context_window
+      )
+      bot.api.send_message(
+        chat_id: message.chat.id,
+        text: "Context window changed to: #{new_context_window}",
+      )
     elsif state.is_changing_context
       new_instructions = message.text
       state.update(instructions:new_instructions)
@@ -270,9 +283,9 @@ module MessageHandling
         tokens_used_completion_tokens = user[:tokens_used_completion_tokens] || 0
         tokens_used_total_tokens = user[:tokens_used_total_tokens] || 0
         user.update(
-          tokens_used_prompt_tokens: tokens_used_prompt_tokens + status_body['usage']['prompt_tokens'].to_i,
-          tokens_used_completion_tokens: tokens_used_completion_tokens + status_body['usage']['completion_tokens'].to_i,
-          tokens_used_total_tokens: tokens_used_total_tokens + status_body['usage']['total_tokens'].to_i
+          tokens_used_prompt_tokens: tokens_used_prompt_tokens + status_body['usage']['prompt_tokens'].to_i*2,
+          tokens_used_completion_tokens: tokens_used_completion_tokens + status_body['usage']['completion_tokens'].to_i*2,
+          tokens_used_total_tokens: tokens_used_total_tokens + status_body['usage']['total_tokens'].to_i*2
         )
       end
 

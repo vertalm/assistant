@@ -15,6 +15,8 @@ class State
   field :mongo_assistant_id, type: String
   field :is_creating_image, type: Boolean, default: false
   field :pending_removal_id, type: String
+  field :is_changing_context_window, type: Boolean, default: false
+  field :context_window, type: Integer, default: 10
 
   embedded_in :user_telegram
 end

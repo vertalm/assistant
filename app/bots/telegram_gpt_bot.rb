@@ -147,6 +147,35 @@ class TelegramGptBot
                 chat_id: message.chat.id,
                 text: "Please enter the name of the new assistant."
               )
+            when '/get_token_info'
+
+              tokens_ordered_prompt_tokens = user[:tokens_ordered_prompt_tokens] || 100000
+              tokens_ordered_completion_tokens = user[:tokens_ordered_completion_tokens] || 100000
+              tokens_used_prompt_tokens = user[:tokens_used_prompt_tokens] || 0
+              tokens_used_completion_tokens = user[:tokens_used_completion_tokens] || 0
+
+              tokens_used_prompt_tokens_left = tokens_ordered_prompt_tokens - tokens_used_prompt_tokens
+              tokens_used_completion_tokens_left = tokens_ordered_completion_tokens - tokens_used_completion_tokens
+
+              # у вас осталось
+              bot.api.send_message(
+                chat_id: message.chat.id,
+                text: "You have left: \n
+                        prompt tokens: #{tokens_used_prompt_tokens_left} \n
+                        completion tokens: #{tokens_used_completion_tokens_left}"
+              )
+
+            when '/enter_license_code'
+              bot.api.send_message(
+                chat_id: message.chat.id,
+                text: "Please enter the license code."
+              )
+            when '/change_context_window'
+              state.update(is_changing_context_window: true)
+              bot.api.send_message(
+                chat_id: message.chat.id,
+                text: "Please enter the new context window."
+              )
             when '/remove_assistant'
               CommandHandlers.handle_remove_assistant_command(state, bot, message)
             when '/new_image'
@@ -205,15 +234,15 @@ class TelegramGptBot
                 message_length: file_data.to_s.length,
                 type: type,
                 date: Date.today,
-                prompt_tokens: 2000,
-                completion_tokens: 2000,
-                total_tokens: 4000
+                prompt_tokens: 4000,
+                completion_tokens: 4000,
+                total_tokens: 8000
               )
 
               user_telegram.update(
-                tokens_used_prompt_tokens: user_telegram[:tokens_used_prompt_tokens] + 2000,
-                tokens_used_completion_tokens: user_telegram[:tokens_used_completion_tokens] + 2000,
-                tokens_used_total_tokens: user_telegram[:tokens_used_total_tokens] + 4000
+                tokens_used_prompt_tokens: user_telegram[:tokens_used_prompt_tokens] + 4000,
+                tokens_used_completion_tokens: user_telegram[:tokens_used_completion_tokens] + 4000,
+                tokens_used_total_tokens: user_telegram[:tokens_used_total_tokens] + 8000
               )
             rescue
               # Сообщение о том, что превышен суточный лимит
