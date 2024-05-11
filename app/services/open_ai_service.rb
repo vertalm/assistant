@@ -118,12 +118,16 @@ class OpenAiService
 
   def self.create_run(state, assistant_id, thread_id)
     endpoint = "https://api.openai.com/v1/threads/#{thread_id}/runs"
+    context_window = state.context_window || 10
+    if context_window < 4
+      context_window = 4
+    end
 
     body = {
       'assistant_id' => assistant_id,
       'truncation_strategy' => {
         'type' => 'last_messages',
-        'last_messages' => 10,
+        'last_messages' => context_window
       }
     }.to_json
 
