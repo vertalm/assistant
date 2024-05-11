@@ -146,7 +146,7 @@ module MessageHandling
       state.update(mongo_assistant_id:assistant.id)
       bot.api.send_message(
         chat_id: message.chat.id,
-        text: "Assistant name: #{assistant_name}, please provide assistant instruction"
+        text: "Assistant name: #{assistant_name}, \n\nplease provide assistant instruction"
       )
     elsif state.is_changing_context
       new_instructions = message.text
