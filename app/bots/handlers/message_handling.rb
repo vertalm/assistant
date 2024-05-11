@@ -4,7 +4,7 @@ module MessageHandling
 
     bot.api.send_message(
       chat_id: message.chat.id,
-      text: "Файл #{file_name} отправлен в OpenAI."
+      text: "File received. Processing...",
     )
 
     name_and_content = file_name + "\n" + file_content + "\n Don't answer, just remember file content"
@@ -12,7 +12,7 @@ module MessageHandling
     if resp == false
       bot.api.send_message(
         chat_id: message.chat.id,
-        text: 'Прости, начни сначала /start',
+        text: 'Sorry, start over /start',
         parse_mode: 'Markdown'
       )
       return
@@ -26,7 +26,7 @@ module MessageHandling
     if wait_complete == false
       bot.api.send_message(
         chat_id: message.chat.id,
-        text: "Таймаут ответа от OpenAI",
+        text: "Timeout from OpenAI",
         parse_mode: 'Markdown'
       )
       return
@@ -53,7 +53,7 @@ module MessageHandling
       rescue
         bot.api.send_message(
           chat_id: message.chat.id,
-          text: "Прости, начни сначала /start",
+          text: "Sorry, start over /start",
           parse_mode: 'Markdown'
         )
       end
@@ -98,13 +98,13 @@ module MessageHandling
         # Если ответ содержит ошибку, отправляем её пользователю в виде текстового сообщения
         bot.api.send_message(
           chat_id: message.chat.id,
-          text: "Произошла ошибка: #{image_response[:error]}"
+          text: "Error: #{image_response[:error]}"
         )
       else
         # Если ответ неожиданный или неверный, уведомляем пользователя
         bot.api.send_message(
           chat_id: message.chat.id,
-          text: "Не удалось создать изображение. Пожалуйста, попробуйте еще раз."
+          text: "Sorry, something went wrong. Please try again later."
         )
       end
     elsif state.is_creating_assistant_instruction
@@ -115,7 +115,7 @@ module MessageHandling
       assistant.save
       bot.api.send_message(
         chat_id: message.chat.id,
-        text: "Инструкция для ассистента: #{assistant_instruction}"
+        text: "Assistant instruction: #{assistant_instruction}"
       )
 
       assistant_id = OpenAiService.create_assistant(state,assistant_instruction)
@@ -146,7 +146,7 @@ module MessageHandling
       state.update(mongo_assistant_id:assistant.id)
       bot.api.send_message(
         chat_id: message.chat.id,
-        text: "Имя ассистента: #{assistant_name}. Введи инструкцию для ассистента"
+        text: "Assistant name: #{assistant_name}, please provide assistant instruction"
       )
     elsif state.is_changing_context
       new_instructions = message.text
@@ -155,7 +155,7 @@ module MessageHandling
       if state.assistant_id.nil?
         bot.api.send_message(
           chat_id: message.chat.id,
-          text: "Прости, начни сначала",
+          text: "Sorry, start over /start",
           parse_mode: 'Markdown'
         )
         return
@@ -163,7 +163,7 @@ module MessageHandling
 
       assistant_id = OpenAiService.create_assistant(state, new_instructions)
       state.update(assistant_id:assistant_id)
-      OpenAiService.create_message(state.thread_id, "Привет", 'user', [])
+      OpenAiService.create_message(state.thread_id, "Hi", 'user', [])
       run_id = OpenAiService.create_run(state, state.assistant_id, state.thread_id)
       state.update(run_id: run_id)
 
@@ -171,7 +171,7 @@ module MessageHandling
       if wait_complete == false
         bot.api.send_message(
           chat_id: message.chat.id,
-          text: "Таймаут ответа от OpenAI",
+          text: "Timeout from OpenAI",
           parse_mode: 'Markdown'
         )
         return
@@ -181,7 +181,7 @@ module MessageHandling
 
       bot.api.send_message(
         chat_id: message.chat.id,
-        text: "Инструкция ассистента обновлена: #{new_instructions}"
+        text: "Instructions changed to: #{new_instructions}",
       )
     else
       if message.caption && message.caption != ''
@@ -198,7 +198,7 @@ module MessageHandling
       if resp == false
         bot.api.send_message(
           chat_id: message.chat.id,
-          text: "Прости, начни сначала",
+          text: "Sorry, start over /start",
           parse_mode: 'Markdown'
         )
         return
@@ -218,7 +218,7 @@ module MessageHandling
       if wait_complete == false
         bot.api.send_message(
           chat_id: message.chat.id,
-          text: "Таймаут ответа от OpenAI",
+          text: "Timeout from OpenAI",
           parse_mode: 'Markdown'
         )
         return
@@ -264,6 +264,15 @@ module MessageHandling
           prompt_tokens: status_body['usage']['prompt_tokens'],
           completion_tokens: status_body['usage']['completion_tokens'],
           total_tokens: status_body['usage']['total_tokens']
+        )
+
+        tokens_used_prompt_tokens = user[:tokens_used_prompt_tokens] || 0
+        tokens_used_completion_tokens = user[:tokens_used_completion_tokens] || 0
+        tokens_used_total_tokens = user[:tokens_used_total_tokens] || 0
+        user.update(
+          tokens_used_prompt_tokens: tokens_used_prompt_tokens + status_body['usage']['prompt_tokens'].to_i,
+          tokens_used_completion_tokens: tokens_used_completion_tokens + status_body['usage']['completion_tokens'].to_i,
+          tokens_used_total_tokens: tokens_used_total_tokens + status_body['usage']['total_tokens'].to_i
         )
       end
 

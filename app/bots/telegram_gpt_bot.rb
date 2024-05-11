@@ -32,7 +32,7 @@ class TelegramGptBot
         if state.nil?
           user.build_state(
             is_changing_context: false,
-            instructions: 'Ты персональный ассистент. Помогаешь писать код на RoR с использованием MongoId.',
+            instructions: 'You are personal assistant. You can help me with my tasks.',
             fallback_model: "gpt-4",
             primary_model: "gpt-4-turbo",
             switch_time: DateTime.now,
@@ -117,6 +117,20 @@ class TelegramGptBot
             end
 =end
 
+            tokens_ordered_prompt_tokens = user[:tokens_ordered_prompt_tokens] || 100000
+            tokens_ordered_completion_tokens = user[:tokens_ordered_completion_tokens] || 100000
+            tokens_used_prompt_tokens = user[:tokens_used_prompt_tokens] || 0
+            tokens_used_completion_tokens = user[:tokens_used_completion_tokens] || 0
+
+            if tokens_used_prompt_tokens > tokens_ordered_prompt_tokens || tokens_used_completion_tokens > tokens_ordered_completion_tokens
+              # Сообщение о том, что превышен лимит токенов и что можно купить новые по адресу https://dev.opuna.com/page/products
+              bot.api.send_message(
+                chat_id: message.chat.id,
+                text: "Your token limit has been exceeded. You can buy new tokens at https://dev.opuna.com/assistant_code"
+              )
+              next
+            end
+
             case message.text
             when '/start'
               CommandHandlers.handle_help_command(bot, message)
@@ -125,13 +139,13 @@ class TelegramGptBot
               state.update(is_changing_context: true)
               bot.api.send_message(
                 chat_id: message.chat.id,
-                text: "Пожалуйста, введи новую инструкцию для ассистента."
+                text: "Please enter the new instructions for the assistant."
               )
             when '/new_assistant'
               state.update(is_creating_assistant_name:true)
               bot.api.send_message(
                 chat_id: message.chat.id,
-                text: "Введи имя нового ассистента."
+                text: "Please enter the name of the new assistant."
               )
             when '/remove_assistant'
               CommandHandlers.handle_remove_assistant_command(state, bot, message)
@@ -173,7 +187,7 @@ class TelegramGptBot
             rescue
               bot.api.send_message(
                 chat_id: message.chat.id,
-                text: "Не удалось загрузить файл. Сейчас бот работает только с текстовыми файлами."
+                text: "Something went wrong. Now you can send only text files."
               )
               file_data = ''
             end
@@ -190,7 +204,16 @@ class TelegramGptBot
                 message_text: file_data,
                 message_length: file_data.to_s.length,
                 type: type,
-                date: Date.today
+                date: Date.today,
+                prompt_tokens: 2000,
+                completion_tokens: 2000,
+                total_tokens: 4000
+              )
+
+              user_telegram.update(
+                tokens_used_prompt_tokens: user_telegram[:tokens_used_prompt_tokens] + 2000,
+                tokens_used_completion_tokens: user_telegram[:tokens_used_completion_tokens] + 2000,
+                tokens_used_total_tokens: user_telegram[:tokens_used_total_tokens] + 4000
               )
             rescue
               # Сообщение о том, что превышен суточный лимит
@@ -210,27 +233,20 @@ class TelegramGptBot
             puts "DAY LIMIT: #{user_telegram[:daily_limit]}"
             puts "DAY LENGTH LIMIT: #{user_telegram[:message_day_length_limit]}"
 
-            if user_telegram[:daily_limit] < today_usage && purchased_messages_amount <= 0
-              # Сообщение о том, что превышен суточный лимит
+            tokens_ordered_prompt_tokens = user[:tokens_ordered_prompt_tokens] || 100000
+            tokens_ordered_completion_tokens = user[:tokens_ordered_completion_tokens] || 100000
+            tokens_used_prompt_tokens = user[:tokens_used_prompt_tokens] || 0
+            tokens_used_completion_tokens = user[:tokens_used_completion_tokens] || 0
+
+            if tokens_used_prompt_tokens > tokens_ordered_prompt_tokens || tokens_used_completion_tokens > tokens_ordered_completion_tokens
+              # Сообщение о том, что превышен лимит токенов и что можно купить новые по адресу https://dev.opuna.com/page/products
               bot.api.send_message(
                 chat_id: message.chat.id,
-                text: "Превышен суточный лимит сообщений #{user_telegram[:daily_limit]}. Обратитесь к администратору " + ENV['ADMINISTRATOR_USERNAME'] + " для увеличения лимита"
+                text: "Your token limit has been exceeded. You can buy new tokens at https://dev.opuna.com/assistant_code"
               )
               next
             end
 
-            if user_telegram[:message_day_length_limit] < today_total_message_length && purchased_messages_amount <= 0
-              # Сообщение о том, что превышен суточный лимит
-              bot.api.send_message(
-                chat_id: message.chat.id,
-                text: "Превышен суточный лимит символов #{user_telegram[:message_day_length_limit]}. Обратитесь к администратору " + ENV['ADMINISTRATOR_USERNAME'] + " для увеличения лимита"
-              )
-              next
-            end
-
-            if purchased_messages_amount > 0
-              user_telegram.update(purchased_messages_amount: purchased_messages_amount - 1)
-            end
             MessageHandling.handle_message_with_file(state, bot, message, file_data, file_name, user)
 
           end
@@ -244,7 +260,7 @@ class TelegramGptBot
             AssistantManagement.perform_removal(state, bot, state.pending_removal_id, message.from.id)
           elsif message.data == 'cancel_remove'
             # Логика для отмены удаления
-            bot.api.send_message(chat_id: message.from.id, text: 'Удаление отменено.')
+            bot.api.send_message(chat_id: message.from.id, text: 'Canceling removal.')
           else
             AssistantManagement.handle_assistant_selection(state, bot, message)
           end
@@ -273,11 +289,11 @@ class TelegramGptBot
       # Отправляем сообщение пользователю о выборе ассистента
       bot.api.send_message(
         chat_id: message.from.id,
-        text: "Ассистент #{assistant.assistant_name} выбран."
+        text: "You have selected the assistant #{assistant.assistant_name}."
       )
 
       # Теперь, когда выбран ассистент, можно безопасно вызывать create_message и create_run
-      OpenAiService.create_message(state.thread_id, "Привет", 'user', [])
+      OpenAiService.create_message(state.thread_id, "Hi", 'user', [])
       state.run_id = OpenAiService.create_run(state, state.assistant_id, state.thread_id)
 
       # Проверка выполнения
@@ -285,7 +301,7 @@ class TelegramGptBot
       if wait_complete == false
         bot.api.send_message(
           chat_id: message.chat.id,
-          text: "Таймаут ответа от OpenAI",
+          text: "OpenAI timeout. Please try again later.",
           parse_mode: 'Markdown'
         )
         return
@@ -308,13 +324,13 @@ class TelegramGptBot
     if website_data.nil?
       bot.api.send_message(
         chat_id: message.chat.id,
-        text: "Не удалось получить данные с веб-сайта.",
+        text: "We could not get data from the website.",
         parse_mode: 'Markdown'
       )
     else
       bot.api.send_message(
         chat_id: message.chat.id,
-        text: "Данные с веб-сайта получены.",
+        text: "We have successfully received data from the website.",
         parse_mode: 'Markdown'
       )
     end

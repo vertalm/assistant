@@ -161,10 +161,10 @@ class OpenAiService
       if last_system_message
         last_system_message['content'].first['text']['value']
       else
-        "Извините, я не могу найти ответ от ассистента 1"
+        "Sorry, I can't find the answer from assistant 1"
       end
     else
-      "Извините, я не могу найти ответ от ассистента 2"
+      "Sorry, I can't find the answer from assistant 2"
     end
   end
 end

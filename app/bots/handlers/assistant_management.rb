@@ -8,11 +8,11 @@ module AssistantManagement
     )
     # Создайте inline-клавиатуру для подтверждения
     inline_keyboard = [
-      [Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Да', callback_data: 'confirm_remove')],
-      [Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Нет', callback_data: 'cancel_remove')]
+      [Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Yes', callback_data: 'confirm_remove')],
+      [Telegram::Bot::Types::InlineKeyboardButton.new(text: 'No', callback_data: 'cancel_remove')]
     ]
     markup = Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: inline_keyboard)
-    bot.api.send_message(chat_id: user_id, text: "Вы уверены, что хотите удалить ассистента?", reply_markup: markup)
+    bot.api.send_message(chat_id: user_id, text: "Are you sure you want to remove this assistant?", reply_markup: markup)
   end
 
   def self.perform_removal(state, bot, assistant_id, user_id)
@@ -23,7 +23,7 @@ module AssistantManagement
 
     OpenAiService.delete_assistant(assistant_id)
 
-    bot.api.send_message(chat_id: user_id, text: "Ассистент удален.")
+    bot.api.send_message(chat_id: user_id, text: "Assistant removed.")
   end
 
   def self.handle_assistant_selection(state, bot, message)
@@ -48,7 +48,7 @@ module AssistantManagement
       # Отправляем сообщение пользователю о выборе ассистента
       bot.api.send_message(
         chat_id: message.from.id,
-        text: "Ассистент #{assistant.assistant_name} выбран."
+        text: "You have selected the #{assistant.assistant_name} assistant."
       )
 
     end

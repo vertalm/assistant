@@ -11,6 +11,11 @@ class UserTelegram
   field :purchased_messages_amount, type: Integer, default: 0
   field :images_amount_day_limit, type: Integer, default: ENV['IMAGES_AMOUNT_DAY_LIMIT'].to_i
   field :trial_period, type: Integer, default: 10
+  field :tokens_ordered_prompt_tokens, type: Integer, default: 100000
+  field :tokens_ordered_completion_tokens, type: Integer, default: 100000
+  field :tokens_used_prompt_tokens, type: Integer, default: 0
+  field :tokens_used_completion_tokens, type: Integer, default: 0
+  field :tokens_used_total_tokens, type: Integer, default: 0
 
   has_many :open_ai_assistants, class_name: OpenAiAssistant, dependent: :destroy
   has_many :usages, class_name: Usage, dependent: :destroy
