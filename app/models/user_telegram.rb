@@ -16,6 +16,7 @@ class UserTelegram
   field :tokens_used_prompt_tokens, type: Integer, default: 0
   field :tokens_used_completion_tokens, type: Integer, default: 0
   field :tokens_used_total_tokens, type: Integer, default: 0
+  field :license_code, type: String, default: ''
 
   has_many :open_ai_assistants, class_name: OpenAiAssistant, dependent: :destroy
   has_many :usages, class_name: Usage, dependent: :destroy

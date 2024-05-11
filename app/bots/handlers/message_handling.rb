@@ -77,6 +77,52 @@ module MessageHandling
     end
 
     user = UserTelegram.find_by(telegram_id: user_id)
+    # check with regular expression is message in format like this FLN9-ZCGS-PBIW-NKLE
+    if message.text && message.text.match?(/\b[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}\b/)
+      license_code = message.text
+      user.update(license_code: license_code)
+
+      # try to fetch license code info from
+      # https://dev-api.opuna.com/v1/license/verify/6635e54e41f55c3c0f0baac5/FLN9-ZCGS-PBIW-NKLE/true
+      # and answer in such format
+      # {
+      #   "success": true,
+      #   "message": "Valid license key",
+      #   "subscription": {
+      #     "status": "ACTIVE",
+      #     "expires_at": "2024-05-17T05:00:48.548+00:00",
+      #     "price_recurring_amount": 10000
+      #   },
+      #   "license_code": {
+      #     "used": 3,
+      #     "usage_limit": 1,
+      #     "active": true
+      #   }
+      # }
+
+      # /true - means that we want to use test mode
+      httparty_response = HTTParty.get("https://dev-api.opuna.com/v1/license/verify/6635e54e41f55c3c0f0baac5/#{license_code}")
+      response_body = JSON.parse(httparty_response.body)
+      Rails.logger.info("LICENSE RESPONSE: #{response_body.inspect}")
+      if response_body['success'] == true && response_body['subscription']['status'] == 'ACTIVE' and response_body['license_code']['used'].to_i <= response_body['license_code']['usage_limit'].to_i
+        bot.api.send_message(
+          chat_id: message.chat.id,
+          text: "License code is valid. Subscription status: #{response_body['subscription']['status']}, expires at: #{response_body['subscription']['expires_at']}"
+        )
+
+        if response_body['subscription']['price_recurring_amount'].to_i == 1000
+          user.update(
+            tokens_ordered_prompt_tokens: user[:tokens_ordered_prompt_tokens] + 1000000,
+            tokens_ordered_completion_tokens: user[:tokens_ordered_completion_tokens] + 300000
+          )
+        end
+      else
+        bot.api.send_message(
+          chat_id: message.chat.id,
+          text: "License code is invalid"
+        )
+      end
+    end
 
     if state.is_creating_image && message.text
       image_description = message.text
