@@ -5,7 +5,7 @@ class State
   field :is_changing_context, type: Boolean, default: false
   field :instructions, type: String, default: 'Ты персональный ассистент.'
   field :fallback_model, type: String, default: "gpt-4"
-  field :primary_model, type: String, default: "gpt-4-turbo"
+  field :primary_model, type: String, default: "gpt-4o"
   field :switch_time, type: DateTime, default: DateTime.now
   field :assistant_id, type: String
   field :thread_id, type: String

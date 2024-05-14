@@ -34,7 +34,7 @@ class TelegramGptBot
             is_changing_context: false,
             instructions: 'You are personal assistant. You can help me with my tasks.',
             fallback_model: "gpt-4",
-            primary_model: "gpt-4-turbo",
+            primary_model: "gpt-4o",
             switch_time: DateTime.now,
             assistant_id: nil,
             thread_id: nil,
