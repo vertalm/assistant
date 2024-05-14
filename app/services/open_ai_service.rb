@@ -6,7 +6,7 @@ class OpenAiService
   @headers = {
     'Content-Type' => 'application/json',
     'Authorization' => "Bearer #{api_key}",
-    'OpenAI-Beta' => 'assistants=v1' # Добавлен дополнительный заголовок
+    'OpenAI-Beta' => 'assistants=v2' # Добавлен дополнительный заголовок
   }
 
   def self.delete_assistant(assistant_id)
