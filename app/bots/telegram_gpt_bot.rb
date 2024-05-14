@@ -303,6 +303,8 @@ class TelegramGptBot
             # Логика для отмены удаления
             bot.api.send_message(chat_id: message.from.id, text: 'Canceling removal.')
           else
+            Rails.logger.info "HANDLE ASSISTANT SELECTION"
+            Rails.logger.info "CALLBACK DATA: #{message.data}"
             AssistantManagement.handle_assistant_selection(state, bot, message)
           end
         end

@@ -31,6 +31,7 @@ module AssistantManagement
     if message.is_a?(Telegram::Bot::Types::CallbackQuery)
       # Получаем ID ассистента из callback_data
       id = message.data
+      Rails.logger.info("Selected assistant ID: #{id}")
       state.update(
         mongo_assistant_id:id
       )
