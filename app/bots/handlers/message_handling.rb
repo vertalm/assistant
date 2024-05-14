@@ -266,12 +266,19 @@ module MessageHandling
       puts "BEFORE RUN"
       puts "ASSISTANT_ID: #{state.assistant_id}"
       puts "THREAD_ID: #{state.thread_id}"
+      Rails.logger.info("BEFORE RUN")
+      Rails.logger.info("ASSISTANT_ID: #{state.assistant_id}")
+      Rails.logger.info("THREAD_ID: #{state.thread_id}")
       run_id = OpenAiService.create_run(state, state.assistant_id, state.thread_id)
       state.update(run_id:run_id)
       puts "AFTER RUN"
       puts "ASSISTANT_ID: #{state.assistant_id}"
       puts "THREAD_ID: #{state.thread_id}"
       puts "RUN_ID: #{run_id}"
+      Rails.logger.info("AFTER RUN")
+      Rails.logger.info("ASSISTANT_ID: #{state.assistant_id}")
+      Rails.logger.info("THREAD_ID: #{state.thread_id}")
+      Rails.logger.info("RUN_ID: #{run_id}")
 
       wait_complete = check_run_completion(run_id, state.thread_id, user)
       if wait_complete == false
