@@ -111,6 +111,7 @@ class OpenAiService
       'file_ids' => file_ids || []
     }.to_json
 
+    Rails.logger.info("CREATE_MESSAGE_BODY: #{body.inspect}")
     response = HTTParty.post(endpoint, body: body, headers: @headers)
     response_body = JSON.parse(response.body)
     puts "BODY MESSAGES RESPONSE #{response_body.inspect}"
