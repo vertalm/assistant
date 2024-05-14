@@ -38,6 +38,7 @@ module AssistantManagement
 
       # Находим ассистента в базе данных
       assistant = ::OpenAiAssistant.find(id)
+      Rails.logger.info("Selected assistant: #{assistant.inspect}")
 
       # Устанавливаем параметры состояния из данных ассистента
       state.update(
