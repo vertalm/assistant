@@ -146,6 +146,7 @@ class OpenAiService
     response = HTTParty.get(endpoint, headers: @headers)
     response_body = JSON.parse(response.body)
     puts "RESPONSE BODY RUN CHECK #{response_body.inspect}"
+    Rails.logger.info "RESPONSE BODY RUN CHECK #{response_body.inspect}"
     response_body
   end
 
