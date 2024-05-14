@@ -46,6 +46,8 @@ module AssistantManagement
         instructions: assistant.instructions
       )
 
+      Rails.logger.info("State: #{state.inspect}")
+
       # Отправляем сообщение пользователю о выборе ассистента
       bot.api.send_message(
         chat_id: message.from.id,
