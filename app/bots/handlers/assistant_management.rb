@@ -1,4 +1,4 @@
-# handlers/assistant_management.rb
+# /app/bots/handlers/assistant_management.rb
 
 module AssistantManagement
 
