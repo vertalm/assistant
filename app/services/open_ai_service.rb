@@ -107,8 +107,7 @@ class OpenAiService
 
     body = {
       'role' => role || 'user',
-      'content' => content,
-      'file_ids' => file_ids || []
+      'content' => content
     }.to_json
 
     Rails.logger.info("CREATE_MESSAGE_BODY: #{body.inspect}")
