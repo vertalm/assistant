@@ -47,6 +47,9 @@ module AssistantManagement
         instructions: assistant.instructions
       )
 
+      Rails.logger.info("assistant.assistant_id: #{assistant.assistant_id}")
+      Rails.logger.info("assistant.thread_id: #{assistant.thread_id}")
+      Rails.logger.info("assistant.instructions: #{assistant.instructions}")
       Rails.logger.info("State: #{state.inspect}")
 
       # Отправляем сообщение пользователю о выборе ассистента
