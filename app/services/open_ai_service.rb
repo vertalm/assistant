@@ -35,6 +35,7 @@ class OpenAiService
     }.to_json
 
     response = HTTParty.post(endpoint, body: body, headers: @headers)
+    Rails.logger.info("CREATE_OPEN_AI_ASSISTANT_RESPONSE: #{response.inspect}")
 
     if response.success?
       response_body = JSON.parse(response.body)

@@ -42,7 +42,7 @@ module AssistantManagement
 
       # Устанавливаем параметры состояния из данных ассистента
       state.update(
-        assistant_id: assistant.id,
+        assistant_id: assistant.assistant_id,
         thread_id: assistant.thread_id,
         instructions: assistant.instructions
       )
