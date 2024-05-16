@@ -111,19 +111,52 @@ module MessageHandling
         )
 
         if response_body['subscription']['price_recurring_amount'].to_i == 500
+
+          new_value_ordered_prompt_tokens = user[:tokens_ordered_prompt_tokens] + 1000000
+          if new_value_ordered_prompt_tokens - user[:tokens_used_prompt_tokens] < 1000000
+            new_value_ordered_prompt_tokens = user[:tokens_used_prompt_tokens] + 1000000
+          end
+
+          new_value_ordered_completion_tokens = user[:tokens_ordered_completion_tokens] + 300000
+          if new_value_ordered_completion_tokens - user[:tokens_used_completion_tokens] < 300000
+            new_value_ordered_completion_tokens = user[:tokens_used_completion_tokens] + 300000
+          end
+
           user.update(
-            tokens_ordered_prompt_tokens: user[:tokens_ordered_prompt_tokens] + 1000000,
-            tokens_ordered_completion_tokens: user[:tokens_ordered_completion_tokens] + 300000
+            tokens_ordered_prompt_tokens: new_value_ordered_prompt_tokens,
+            tokens_ordered_completion_tokens: new_value_ordered_completion_tokens
           )
         elsif response_body['subscription']['price_recurring_amount'].to_i == 5000
+
+          new_value_ordered_prompt_tokens = user[:tokens_ordered_prompt_tokens] + 10000000
+          if new_value_ordered_prompt_tokens - user[:tokens_used_prompt_tokens] < 10000000
+            new_value_ordered_prompt_tokens = user[:tokens_used_prompt_tokens] + 10000000
+          end
+
+          new_value_ordered_completion_tokens = user[:tokens_ordered_completion_tokens] + 3000000
+          if new_value_ordered_completion_tokens - user[:tokens_used_completion_tokens] < 3000000
+            new_value_ordered_completion_tokens = user[:tokens_used_completion_tokens] + 3000000
+          end
+
           user.update(
-            tokens_ordered_prompt_tokens: user[:tokens_ordered_prompt_tokens] + 10000000,
-            tokens_ordered_completion_tokens: user[:tokens_ordered_completion_tokens] + 3000000
+            tokens_ordered_prompt_tokens: new_value_ordered_prompt_tokens,
+            tokens_ordered_completion_tokens: new_value_ordered_completion_tokens
           )
         elsif response_body['subscription']['price_recurring_amount'].to_i == 2500
+
+          new_value_ordered_prompt_tokens = user[:tokens_ordered_prompt_tokens] + 5000000
+          if new_value_ordered_prompt_tokens - user[:tokens_used_prompt_tokens] < 5000000
+            new_value_ordered_prompt_tokens = user[:tokens_used_prompt_tokens] + 5000000
+          end
+
+          new_value_ordered_completion_tokens = user[:tokens_ordered_completion_tokens] + 1500000
+          if new_value_ordered_completion_tokens - user[:tokens_used_completion_tokens] < 1500000
+            new_value_ordered_completion_tokens = user[:tokens_used_completion_tokens] + 1500000
+          end
+
           user.update(
-            tokens_ordered_prompt_tokens: user[:tokens_ordered_prompt_tokens] + 5000000,
-            tokens_ordered_completion_tokens: user[:tokens_ordered_completion_tokens] + 1500000
+            tokens_ordered_prompt_tokens: new_value_ordered_prompt_tokens,
+            tokens_ordered_completion_tokens: new_value_ordered_completion_tokens
           )
         end
       else
