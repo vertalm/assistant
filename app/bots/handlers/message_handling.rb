@@ -132,6 +132,9 @@ module MessageHandling
           text: "License code is invalid"
         )
       end
+
+      # return from function
+      return
     end
 
     if state.is_creating_image && message.text
