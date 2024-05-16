@@ -110,10 +110,20 @@ module MessageHandling
           text: "License code is valid. Subscription status: #{response_body['subscription']['status']}, expires at: #{response_body['subscription']['expires_at']}"
         )
 
-        if response_body['subscription']['price_recurring_amount'].to_i == 1000
+        if response_body['subscription']['price_recurring_amount'].to_i == 500
           user.update(
             tokens_ordered_prompt_tokens: user[:tokens_ordered_prompt_tokens] + 1000000,
             tokens_ordered_completion_tokens: user[:tokens_ordered_completion_tokens] + 300000
+          )
+        elsif response_body['subscription']['price_recurring_amount'].to_i == 5000
+          user.update(
+            tokens_ordered_prompt_tokens: user[:tokens_ordered_prompt_tokens] + 10000000,
+            tokens_ordered_completion_tokens: user[:tokens_ordered_completion_tokens] + 3000000
+          )
+        elsif response_body['subscription']['price_recurring_amount'].to_i == 2500
+          user.update(
+            tokens_ordered_prompt_tokens: user[:tokens_ordered_prompt_tokens] + 5000000,
+            tokens_ordered_completion_tokens: user[:tokens_ordered_completion_tokens] + 1500000
           )
         end
       else
