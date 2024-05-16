@@ -101,7 +101,7 @@ module MessageHandling
       # }
 
       # /true - means that we want to use test mode
-      httparty_response = HTTParty.get("https://dev-api.opuna.com/v1/license/verify/663edcb541f55cf50ba7a036/#{license_code}/true")
+      httparty_response = HTTParty.get("https://api.opuna.com/v1/license/verify/6645e7072c5406278ceb4638/#{license_code}/true")
       response_body = JSON.parse(httparty_response.body)
       Rails.logger.info("LICENSE RESPONSE: #{response_body.inspect}")
       if response_body['success'] == true && response_body['subscription']['status'] == 'ACTIVE' and response_body['license_code']['used'].to_i <= response_body['license_code']['usage_limit'].to_i

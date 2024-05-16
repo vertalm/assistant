@@ -132,7 +132,7 @@ class TelegramGptBot
               # Сообщение о том, что превышен лимит токенов и что можно купить новые по адресу https://dev.opuna.com/page/products
               bot.api.send_message(
                 chat_id: message.chat.id,
-                text: "Your token limit has been exceeded. You can buy new tokens at https://dev.opuna.com/assistant_code"
+                text: "Your token limit has been exceeded. You can buy new tokens at https://opuna.com/chat_gpt_ai_assistant_bot?id=6645e7e22c5406278ceb464c"
               )
               next
             end
@@ -283,7 +283,7 @@ class TelegramGptBot
               # Сообщение о том, что превышен лимит токенов и что можно купить новые по адресу https://dev.opuna.com/page/products
               bot.api.send_message(
                 chat_id: message.chat.id,
-                text: "Your token limit has been exceeded. You can buy new tokens at https://dev.opuna.com/assistant_code"
+                text: "Your token limit has been exceeded. You can buy new tokens at https://opuna.com/chat_gpt_ai_assistant_bot?id=6645e7e22c5406278ceb464c"
               )
               next
             end
